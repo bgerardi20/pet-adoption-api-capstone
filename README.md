@@ -2,17 +2,14 @@
 
 Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with YouTube API
 
-![landing page] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_landing_page.png)
-
-![overlay for googlemaps] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_google-map.png)
-
-![overlay for youtube] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_youtube.png)
 
 ## Background
 //I really like sweet, delicious coffee and thought it would be interesting to see what kinds of coffee drinks are available around the world.
 My entire life I have been a animal lover, but could never find the perfect one to adopt. With this app, that problem with cease to exist, as you are able to search thousands of images, to help with picking out which one is best for you. Once you found that perfect breed, hop on over to the adoption section and find one close to you!
+
 ## Use Case
 //This app includes 20 different coffee drinks from different countries. A person can read through the descriptions, view the images and choose a coffee. An overlay will then show where the coffee can be found, two YouTube videos on how to make it and some coffee trivia from Wikipedia.
+![Use Case] (https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
 
 
 ## User Stories
@@ -20,13 +17,20 @@ As user, I want to {functionality} in order to {business justification}
 
 As a user I would like to land on the website and undestand what is the website about in order to use it
 (wireframe-logo, welcome to page, basic info.)
+![Use Case] (https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
+
 As a user I want to research which dogs(breed, sub-breed) im intrested in in order to find the one that I like.
+![Use Case] (https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
 
 As a user I want to search through articles/forums in order to make the best decsion possible on which animal to adopt.
+![Use Case] (https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
 
 As a user I want to find a shelter near me that has the animal of my choice, in order to get the information I need to make thr adoption happen.
+![Use Case] (https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
 
 As a user I want to be able to find cute pictures of dogs in order to cheer me up.
+![Use Case] (https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
+
 
 ## Working Prototype
 //You can access a working prototype of the app here: https://kimcheru18.github.io/coffee-search-wikipedia-api-capstone/
