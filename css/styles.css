@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+    border: 0px;
+    box-sizing: border-box;
+    /*remove before going live */
+    /* border: 1px solid; */
+}
+
+body {
+    background-color: slategrey;
+
+}
+
+header {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+li {
+    display: inline-block;
+    width: 11rem;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: medium;
+    font-family: fantasy;
+    font-weight: bold;
+
+}
+
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pictures {
+    width: 300px;
+}
+
+.logo {
+    width: 47px;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    display: block;
+    margin-top: 2rem;
+}
+
+.for {
+    width: 400px;
+    height: 300px;
+    margin: 30px;
+    border: 3px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nav {
+    width: 300px;
+    height: 200px;
+
+}
+
+.header {
+    background: url("/images/dog_pic_for_header.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.statement {
+    position: relative;
+    top: 28px;
+    left: 68px;
+}
+
+.content {
+    position: relative;
+    top: 28px;
+    left: 68px;
+}
+
+.mission {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: left;
+}
+
+.slider slider-for {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.mission2 {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: right;
+}
