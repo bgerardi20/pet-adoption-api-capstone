@@ -45,6 +45,13 @@ h1 {
     margin-right: auto;
 }
 
+.home {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .pictures {
     width: 300px;
 }
@@ -59,22 +66,26 @@ h1 {
     font-size: 3rem;
     display: block;
     margin-top: 2rem;
+    font-family: fantasy;
 }
 
 .for {
-    width: 400px;
+    width: 100%;
     height: 300px;
     margin: 30px;
     border: 3px solid white;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
 .nav {
     width: 300px;
     height: 200px;
-
+    opacity: 0.5;
 }
 
 .header {
@@ -88,35 +99,97 @@ h1 {
 .statement {
     position: relative;
     top: 28px;
-    left: 68px;
+    text-align: center;
 }
 
+/* dont need
 .content {
     position: relative;
     top: 28px;
-    left: 68px;
-}
-
-.mission {
-    width: 33%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
+} */
+
+.search_form {
+    width: 60%;
+    height: 70%;
     float: left;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .slider slider-for {
-    width: 33%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.video_container {
+    width: 30%;
+    float: right;
+}
+
+.nav:hover {
+    opacity: 1.0;
+}
+
+.container {
+    float: left;
+    position: relative;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#search {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: fantasy;
+}
+
+#find {
+    font-family: cursive;
+    font-size: 17px;
+    display: inline;
+}
+
+#location {
+    width: 100%;
+    background-color: antiquewhite;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 3px 3px;
+    margin-bottom: 5px;
+    font-style: italic;
+    padding: 2px;
 
 }
 
-.mission2 {
-    width: 33%;
-    margin-left: auto;
-    margin-right: auto;
+#submit {
+    width: 100%;
+    background-color: cadetblue;
+    line-height: 20px;
+    border-radius: 3px 3px;
+    padding: 3px;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: large;
+}
+
+#border {
+    opacity: .85;
+    border-radius: 20%;
+}
+
+footer {
     text-align: center;
-    float: right;
+}
+
+.footer {
+    margin: 5px;
 }
