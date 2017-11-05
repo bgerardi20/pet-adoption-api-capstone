@@ -16,9 +16,9 @@
         <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Pet Adoption Capstone</h1>
         <nav>
             <ul class="header_list">
-                <li><a href="">Adopt a Pet</a></li>
-                <li><a href="">Show Me Cute Dogs</a></li>
-                <li><a href="">Browse Helpful Articles</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Browse Helpful Articles</a></li>
             </ul>
         </nav>
 
@@ -28,34 +28,18 @@
 
         <div class="video_container">
 
-            <iframe class="statement" width="560" height="315" src="https://www.youtube.com/embed/AsxKpr8fTmQ" frameborder="0" allowfullscreen></iframe>
+            <iframe class="statement" width="100%" height="400px" src="https://www.youtube.com/embed/AsxKpr8fTmQ" frameborder="0" allowfullscreen></iframe>
 
-        </div>
-
-        <div class="checklist">
-            <h2>Recommended Essentials Before Getting Your Pup!</h2>
-            <ul class="list">
-                <li class="essentials">Water and Food Bowl</li>
-                <li class="essentials">Leash</li>
-                <li class="essentials">Collar</li>
-                <li class="essentials">A Few Toys to Play With</li>
-                <li class="essentials">Healthy Food</li>
-                <li class="essentials">Make an Appoitment With a Vetenarian</li>
-                <li class="essentials">Training Treats</li>
-                <li class="essentials">A Bed/Crate</li>
-                <li class="essentials">Patience!!</li>
-            </ul>
         </div>
 
         <div class="stats">
-            <h2>Adoption Statistics from 2016</h2>
+            <h2 class="h2_checklist">Adoption Statistics from 2016</h2>
             <ul class="list">
-                <li class="adopt_stats">How many were adopted</li>
-                <li class="adopt_stats">How many were purchased</li>
-                <li class="adopt_stats">How many were returned</li>
-                <li class="adopt_stats">Average animals per shelter?</li>
-                <li class="adopt_stats">How many shetlers in the United states</li>
-                <li class="adopt_stats">Some things shelters do before you adopt them(do they have to be spayed,shots, ect</li>
+                <li class="adopt_stats">Approximately 4 million shelter animals are adopted each year.</li>
+                <li class="adopt_stats">Each year, approximately 1.5 million shelter animals are euthanized.</li>
+                <li class="adopt_stats">APPA survey shows that 37% of dogs are adopted from a shelter.</li>
+                <li class="adopt_stats">Estimated number of rescue groups and animal shelters in North America is 10,000</li>
+                <li class="adopt_stats">Estimated amount spent by animal control orgainzations annually is $800 million to $1 billion.</li>
             </ul>
         </div>
 
@@ -98,56 +82,66 @@
         </div>
     </main>
 
+    <header class="header">
+
+        <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Pet Adoption Capstone</h1>
+        <nav>
+            <ul class="header_list">
+                <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Browse Helpful Articles</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
     <main class="adoption">
-
-        <header class="header">
-
-            <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Adoption Page</h1>
-            <nav>
-                <ul class="header_list">
-                    <li><a href="">Adopt a Pet</a></li>
-                    <li><a href="">Show Me Cute Dogs</a></li>
-                    <li><a href="">Browse Helpful Articles</a></li>
-                </ul>
-            </nav>
-
-        </header>
-
 
         <div class="adoption_container">
             <!--make this a drop down -->
             <div class="container">
 
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
+                <img src="images/dog_border.gif" alt="paw_border" class="border" width="90%">
+
                 <form class="search_form">
-                    <h2 class="search">QUICK SEARCH</h2>
-                    <h3 class="find">Search all available pets!</h3><br>
-                    <input type="drop-down" name="location" placeholder=" i.e dogs" id="location"><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
-                </form>
 
-            </div>
-            <!--possibly drop down? -->
-            <div class="container">
+                    <h1 class="search">ADOPTION SEARCH</h1>
 
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
-                <form class="search_form">
-                    <h2 class="search">BY BREED</h2>
-                    <h3 class="find">Find my dog by breed!</h3><br>
-                    <input type="text" name="location" placeholder=" i.e boxer" id="location"><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
-                </form>
+                    <h2 class="find">Search by:</h2><br>
 
-            </div>
+                    <label class="search_filters">Location</label>
+                    <input type="text" name="location" placeholder=" i.e 76024" class="location"><br>
 
-            <div class="container">
+                    <label class="search_filters">Breed</label>
+                    <!-- drop down or input? -->
+                    <input type="text" name="breed" placeholder=" i.e boxer" class="location">
 
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
-                <form class="search_form">
-                    <h2 class="search">BY LOCATION</h2>
-                    <h3 class="find">Find any dogs in my area!</h3><br>
-                    <input type="text" name="location" placeholder=" i.e 76022" id="location"><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
+                    <label class="search_filters">Sub-breed</label>
+                    <!-- drop down or input? -->
+                    <input type="text" name="sub-breed" placeholder=" i.e afghan" class="location"><br>
+
+                    <div class="sex_size_container">
+
+                        <label for="Sex">Sex:</label>
+                        <select name="sex" class="sex_size">
+                            <option value=""></option>
+                            <option value="F">Female</option>
+                            <option value="M">Male</option>
+                        </select>
+
+                        <label for="Size">Size:</label>
+                        <select name="size" class="sex_size">
+                            <option value=""></option>
+                            <option value="S">Small</option>
+                            <option value="M">Medium</option>
+                            <option value="L">Large</option>
+                            <option value="XL">Extra-large</option>
+                        </select><br>
+
+                    </div>
+
+                    <input type="submit" value="Find My Pet!" class="submit">
+
                 </form>
 
             </div>
@@ -155,63 +149,68 @@
         </div>
 
         <div class="results_container">
-            Results
+
+            <h1 class="results">Results</h1>
+
         </div>
 
     </main>
 
+    <header class="header">
+
+        <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Pet Adoption Capstone</h1>
+        <nav>
+            <ul class="header_list">
+                <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Browse Helpful Articles</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
     <main class="cute_dogs">
-
-        <header class="header">
-
-            <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Adoption Page</h1>
-            <nav>
-                <ul class="header_list">
-                    <li><a href="">Adopt a Pet</a></li>
-                    <li><a href="">Show Me Cute Dogs</a></li>
-                    <li><a href="">Browse Helpful Articles</a></li>
-                </ul>
-            </nav>
-
-        </header>
 
         <div class="picture_container">
 
-            <div class="container">
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
-                <form class="search_form">
-                    <h2 class="search">QUICK SEARCH</h2>
-                    <h3 class="find">Hurry and show me a cute pic!</h3><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
-                </form>
-            </div>
             <!--possibly drop down? -->
             <div class="container">
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
-                <form class="search_form">
-                    <h2 class="search">BY BREED</h2>
-                    <h3 class="find">Show me pics by breed!</h3><br>
-                    <input type="text" name="location" placeholder="boxer" id="location"><br>
-                    <h4 class="find">or</h4><br>
-                    <h3 class="find">Show me pics by sub-breed!</h3><br>
-                    <input type="text" name="location" placeholder="afghan" id="location"><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
-                </form>
-            </div>
 
-            <div class="container">
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
+                <img src="images/dog_border.gif" alt="paw_border" class="border" width="90%">
+
                 <form class="search_form">
-                    <h2 class="search">ALL THE DOGS!</h2>
-                    <h3 class="find">I want to see all the dogs!</h3><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
+
+                    <h1 class="search">PICTURE SEARCH</h1>
+
+                    <h2 class="find">Search by:</h2><br>
+
+                    <!-- change to label(all) make label certain % and input certain % -->
+                    <label class="search_pics">By Breed</label>
+                    <!-- drop down -->
+                    <input type="drop-down" name="animal" placeholder=" i.e boxer" class="location_pic"><br>
+
+                    <label class="search_pics">By Sub-breed</label>
+                    <input type="text" name="location" placeholder=" i.e afghan" class="location_pic"><br>
+
+                    <label class="pic_label">Show All Pics</label>
+                    <!-- drop down or input? -->
+                    <input type="radio" name="all" class="location_radio">
+
+                    <label class="pic_label">Show Random Pics</label>
+                    <!-- drop down or input? -->
+                    <input type="radio" name="random" class="location_radio"><br>
+
+                    <input type="submit" value="Find My Pet!" class="submit">
+
                 </form>
+
             </div>
 
         </div>
 
         <div class="results_container">
-            Results
+            <h1>Results</h1>
+
         </div>
 
     </main>
@@ -222,34 +221,64 @@
             <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Adoption Page</h1>
             <nav>
                 <ul class="header_list">
-                    <li><a href="">Adopt a Pet</a></li>
-                    <li><a href="">Show Me Cute Dogs</a></li>
-                    <li><a href="">Browse Helpful Articles</a></li>
+                    <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
+                    <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
+                    <li class="nav_options"><a href="" class="nav_words">Browse Helpful Articles</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="article_container">
 
-            <div class="container">
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
-                <form class="search_form">
-                    <h2 class="search">SEARCH ARTICLES</h2>
-                    <h3 class="find">Search articles by keyword!</h3><br>
-                    <input type="text" name="location" placeholder="food" id="location"><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
-                </form>
+            <div class="shelter_container">
+                <div class="container">
+
+                    <img src="images/dog_border.gif" alt="paw_border" class="border_article" width="" height="300">
+
+                    <form class="search_form">
+
+                        <h1 class="search_article">FIND A SHELTER</h1>
+
+                        <h2 class="find_article">Search by:</h2><br>
+
+                        <label class="search_filters_article">Location</label>
+                        <input type="text" name="location" placeholder=" i.e 76024" class="location_article"><br>
+
+                        <label class="search_filters_article">Name</label>
+                        <input type="text" name="name" placeholder=" i.e Rescue Shelter" class="location_article"><br>
+
+                        <input type="submit" value="Find My Shelter!" id="submit">
+
+                    </form>
+
+                </div>
+
+                <div class="checklist">
+                    <h2 class="h2_checklist">Recommended Essentials Before Getting Your Pup!</h2>
+                    <ul class="list">
+                        <li class="essentials">Water/Food Bowl</li>
+                        <li class="essentials">Collar/Leash</li>
+                        <li class="essentials">Some Toys</li>
+                        <li class="essentials">Healthy Food and Training Treats</li>
+                        <li class="essentials">Patience!!</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="container">
-                <img src="images/dog_border.gif" alt="paw_border" id="border" width="90%">
-                <form class="search_form">
-                    <h2 class="search">SHOW ARTICLES</h2>
-                    <h3 class="find">Show all articles!</h3><br>
-                    <input type="submit" value="Find My Pet!" id="submit">
-                </form>
-            </div>
+            <div class="article_side">
 
+                <h1 class="articles_h1">Articles</h1>
+                <h2 class="article_h2">Some Helpful articles to help prepare you for adoption!</h2>
+                <ul class="article_list">
+                    <li class="url"><a href=""></a>Article</li>
+                    <li class="url"><a href=""></a>Article</li>
+                    <li class="url"><a href=""></a>Article</li>
+                    <li class="url"><a href=""></a>Articel</li>
+                    <li class="url"><a href=""></a>Article</li>
+                </ul>
+
+            </div>
         </div>
 
     </main>

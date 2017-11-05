@@ -27,15 +27,46 @@ h1 {
     margin-right: auto;
 }
 
-li {
-    display: inline-block;
-    width: 11rem;
-    margin: 20px;
-    text-align: center;
-    text-decoration: underline;
-    font-size: medium;
+select {
+    width: 20%;
+    height: 33px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 3px 3px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 4px;
+    font-style: italic;
+    padding: 1px;
+}
+
+.nav_options {
+    display: inline;
+    width: 30%;
+    margin: 4px;
+    /* text-align: center; */
+    /*text-decoration: underline;*/
+    font-size: small;
     font-family: fantasy;
     font-weight: bold;
+    position: relative;
+    left: 460px;
+    bottom: 250px;
+}
+
+.nav_words {
+    color: white;
+}
+
+label {
+    margin: 7px
+}
+
+
+option {
+    font-size: 16px;
+    display: inline;
+    font-family: sans-serif;
 }
 
 footer {
@@ -43,7 +74,7 @@ footer {
 }
 
 .header {
-    background: url("/images/dog_pic_for_header.jpg");
+    background: url("/images/other_dog_logo.jpg/");
     width: 100%;
     height: 250px;
     background-size: cover;
@@ -64,7 +95,8 @@ footer {
 
 .home,
 .adoption,
-.cute_dogs {
+.cute_dogs,
+.articles {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -72,8 +104,11 @@ footer {
 }
 
 .video_container {
-    width: 30%;
-    float: right;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 47px;
 }
 
 .statement {
@@ -82,9 +117,15 @@ footer {
     text-align: center;
 }
 
-.checklist,
 .stats {
-    background-color: antiquewhite
+    background-color: antiquewhite;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: 4%;
+
+    border: 3px solid white;
+    border-radius: 5%;
 }
 
 .slider slider-for {
@@ -95,7 +136,7 @@ footer {
 }
 
 .for {
-    width: 100%;
+    width: 1000px;
     height: 300px;
     margin: 30px;
     border: 3px solid white;
@@ -104,7 +145,7 @@ footer {
     text-align: center;
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 75px;
 }
 
 .nav {
@@ -126,7 +167,7 @@ results_container,
 }
 
 .header {
-    background: url("/images/dog_pic_for_header.jpg");
+    background: url("/images/other_dog_logo.jpg");
     width: 100%;
     height: 250px;
     background-size: cover;
@@ -150,29 +191,29 @@ results_container,
 
 .container {
     position: relative;
-    width: 30%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
     display: inline-block;
 }
 
-#border {
+.border {
     opacity: .85;
     border-radius: 20%;
 }
 
 .search_form {
-    width: 60%;
+    width: 94%;
     height: 70%;
-    float: left;
+    /* float: left; */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
 }
 
-#search {
+.search {
     text-decoration: underline;
     font-size: 20px;
     font-weight: 900;
@@ -186,27 +227,67 @@ results_container,
     margin-top: 30px;
 }
 
-#location {
-    width: 100%;
+.articles_h1 {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: fantasy;
+    position: relative;
+    left: 25%;
+}
+
+.article_h2 {
+    font-family: cursive;
+    font-size: 17px;
+    display: inline;
+    margin-top: 30px;
+    position: relative;
+    left: 25%;
+}
+
+.search_filters {
+    font-size: 16px;
+    display: block;
+    font-family: sans-serif;
+}
+
+.location {
     background-color: antiquewhite;
     line-height: 30px;
     border: 1px solid black;
     border-radius: 3px 3px;
-    margin-bottom: 5px;
+    /* margin-bottom: 50px; */
+    /* margin-top: 20px; */
+    /* margin-left: 5px; */
+    /* margin-right: 4px; */
     font-style: italic;
-    padding: 2px;
-
+    padding: 1px;
 }
 
-#submit {
-    width: 100%;
+.submit {
+    width: 50%;
     background-color: cadetblue;
-    line-height: 20px;
+    line-height: 35px;
     border-radius: 3px 3px;
-    padding: 3px;
+    padding: 5px;
+    margin-top: 23px;
     font-family: fantasy;
     font-weight: 900;
     font-size: large;
+}
+
+#submit {
+    width: 25%;
+    background-color: cadetblue;
+    line-height: 35px;
+    border-radius: 3px 3px;
+    padding: 5px;
+    margin-top: 23px;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: large;
+    position: relative;
+    right: 44%;
 }
 
 .footer {
@@ -220,6 +301,202 @@ top: 28px;
 text-align: center;
 } */
 
+.essentials {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: fantasy;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-decoration: none;
+}
+
+.adopt_stats {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: fantasy;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-decoration: none;
+    color: purple;
+}
+
+.h2_checklist {
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    width: 100%;
+    font-family: fantasy;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 1%;
+}
+
+.list {
+    text-decoration: none;
+}
+
+.message {
+    font-family: sans-serif;
+}
+
+.location_pic {
+    background-color: antiquewhite;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 3px 3px;
+    font-style: italic;
+    padding: 1px;
+}
+
+.search_pics {
+    font-size: 16px;
+    display: block;
+    font-family: sans-serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.location_radio {
+    display: inline;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.results_container {
+    width: 80%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+
+.pic_label {
+    display: inline;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.article_list {
+    width: 40%;
+    /* height: 600px; */
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 25%;
+
+}
+
+.url {
+    text-decoration: none;
+}
+
+.sex_age {
+    color: black;
+    display: inline;
+}
+
+.sex_size_container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search_article {
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: 900;
+    font-family: fantasy;
+    position: relative;
+    right: 44%;
+}
+
+.find_article {
+    font-family: cursive;
+    font-size: 16px;
+    display: inline;
+    margin-top: 30px;
+    position: relative;
+    right: 44%;
+}
+
+.search_filters_article {
+    font-size: 13px;
+    display: block;
+    font-family: sans-serif;
+    position: relative;
+    right: 44%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border_article {
+    opacity: .85;
+    border-radius: 20%;
+    position: relative;
+    right: 44%;
+}
+
+.location_article {
+    background-color: antiquewhite;
+    line-height: 20px;
+    border: 1px solid black;
+    border-radius: 3px 3px;
+    /* margin-bottom: 50px; */
+    /* margin-top: 20px; */
+    /* margin-left: 5px; */
+    /* margin-right: 4px; */
+    font-style: italic;
+    padding: 1px;
+    position: relative;
+    right: 44%;
+}
+
+.shelter_container {
+    width: 40%;
+    display: inline-block;
+}
+
+.article_side {
+    width: 40%;
+    float: right;
+}
+
+.checklist {
+    background-color: antiquewhite;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: 4%;
+    border: 3px solid white;
+    border-radius: 5%;
+    position: relative;
+    right: 10%;
+}
+
+
+
+
+
+.location_radio {
+    display: inline;
+}
+
 .nav:hover {
     opacity: 1.0;
+}
+
+input:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.submit:hover {
+    border: 2px solid;
+    border-color: aliceblue;
+    box-shadow: 0 0 10px #9ecaed;
 }
