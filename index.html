@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pet Adoption Capstone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/styles.css">
@@ -41,6 +42,12 @@
                 <li class="adopt_stats">Estimated number of rescue groups and animal shelters in North America is 10,000</li>
                 <li class="adopt_stats">Estimated amount spent by animal control orgainzations annually is $800 million to $1 billion.</li>
             </ul>
+        </div>
+
+        <div class="random_pet_results_container">
+
+
+
         </div>
 
         <div class="slider slider-for">
@@ -110,30 +117,33 @@
                     <h2 class="find">Search by:</h2><br>
 
                     <label class="search_filters">Location</label>
-                    <input type="text" name="location" placeholder=" i.e 76024" class="location"><br>
+                    <input type="text" name="location" placeholder=" i.e 76021" value="76021" class="location"><br>
 
-                    <label class="search_filters">Breed</label>
+                    <label class="search_filters">Animal</label>
                     <!-- drop down or input? -->
-                    <input type="text" name="breed" placeholder=" i.e boxer" class="location">
+                    <select name="animal" class="location">
+                        <option value="dog" selected>dog</option>
+                        <option value="cat">cat</option>
+                    </select><br>
 
                     <label class="search_filters">Sub-breed</label>
                     <!-- drop down or input? -->
-                    <input type="text" name="sub-breed" placeholder=" i.e afghan" class="location"><br>
+                    <select name="breed" class="location">
+                        <option value="dog" selected>dog</option>
+                    </select><br>
 
                     <div class="sex_size_container">
 
                         <label for="Sex">Sex:</label>
                         <select name="sex" class="sex_size">
-                            <option value=""></option>
                             <option value="F">Female</option>
-                            <option value="M">Male</option>
+                            <option value="M" selected>Male</option>
                         </select>
 
                         <label for="Size">Size:</label>
                         <select name="size" class="sex_size">
-                            <option value=""></option>
                             <option value="S">Small</option>
-                            <option value="M">Medium</option>
+                            <option value="M" selected>Medium</option>
                             <option value="L">Large</option>
                             <option value="XL">Extra-large</option>
                         </select><br>
@@ -150,50 +160,7 @@
 
         <div class="results_container">
 
-            <div id="adoption_results">
 
-                <div class="name_container">
-
-                    <h1 class="dog_name">Name </h1>
-
-                    <h2 class="dog_type">Type </h2>
-
-                </div>
-
-                <div class="image_container">
-
-                    <img src="images/night-animal-dog-pet.jpg" alt="big_dog_pic" class="dog_image" width="400px" height="200px">
-
-                    <img src="images/night-animal-dog-pet.jpg" alt="small_dog_pic" class="small_dog_image" width="250px" height="150px">
-
-                    <img src="images/night-animal-dog-pet.jpg" alt="small_dog_pic" class="small_dog_image" width="250px" height="150px">
-
-                </div>
-
-                <div class="contact_container">
-
-                    <h3 class="dog_location"><i class="fa fa-map-marker" aria-hidden="true"></i>Location </h3>
-
-                    <div class="dog_contact">
-                        <ul class="adopt_ul">
-                            <li class="adopt_li"><i class="fa fa-phone" aria-hidden="true"></i>Phone Number</li>
-                            <li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="dog_bio">
-
-                        <h5 id="bio">Bio</h5>
-
-                        <p id="adoption_bio">This is the bio.</p>
-
-                    </div>
-
-                </div>
-
-                <input type="text" value="View My Petfinder Page" class="petfinder_button">
-
-            </div>
 
         </div>
 
@@ -376,7 +343,7 @@
             </div>
         </div>
 
-        <div class="results_container" style="text-align: left">
+        <div class="results_container text-left">
 
             <div class="shelter_results">
 
