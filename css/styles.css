@@ -13,6 +13,14 @@ body {
 
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 header {
     display: inline-block;
     margin: 0 auto;
@@ -75,11 +83,11 @@ footer {
 }
 
 .header {
-    background: url("/images/other_dog_logo.jpg/");
+    background: url("/images/other_dog_logo_cropped.jpg");
     width: 100%;
     height: 250px;
     background-size: cover;
-    background-position: bottom center;
+    background-position: top center;
 }
 
 .logo {
@@ -159,19 +167,10 @@ footer {
 }
 
 .adoption_container,
-results_container,
 .article_container {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-}
-
-.header {
-    background: url("/images/other_dog_logo.jpg");
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-position: bottom center;
 }
 
 .title {
@@ -183,7 +182,6 @@ results_container,
 }
 
 .adoption_container,
-results_container,
 .article_container {
     width: 100%;
     margin: 0 auto;
@@ -308,10 +306,10 @@ text-align: center;
     display: block;
     width: 100%;
     font-family: sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
-    margin: 1%;
+    margin: 2.3%;
     color: slategray;
 }
 
@@ -365,12 +363,14 @@ text-align: center;
 
 .results_container {
     width: 80%;
-    height: 500px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 50px;
     border: 1px solid black;
+    background-color: slategray;
+    text-align: center;
 }
 
 .pic_label {
@@ -538,26 +538,30 @@ text-align: center;
 }
 
 #left {
-    width: 45%;
+    width: 50%;
     height: 10%;
     border: 1px solid black;
-
-    margin-right: 2%;
-    margin-left: 3%;
+    margin-left: auto;
+    margin-right: auto;
     display: inline-block;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 #right {
-    width: 45%;
-    height: 900px;
+    width: 48%;
+    height: auto;
     background-color: white;
     border: 1px solid black;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     display: inline-block;
     vertical-align: top;
     background-color: slategray;
     border: 3px solid white;
+    padding-left: 2.5%;
+    padding-right: 3.5%;
+    padding-bottom: 1%;
 }
 
 .blah {
@@ -566,7 +570,8 @@ text-align: center;
 }
 
 .other_blah {
-    width: 45%;
+    width: 50%;
+    padding-top: 0.5%;
 }
 
 .other_border {
@@ -590,20 +595,168 @@ text-align: center;
 
 #bottom {
     position: relative;
-    width: 100%;
-    height: 500px;
+    width: 50%;
+    height: auto;
     background-color: #262626;
     border: 3px solid white;
     bottom: 498px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    margin-right: 2%;
-    margin-left: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+
 }
 
 
 
 
+
+.dog_name {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dog_type {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.image_container,
+.contact_container {
+    width: 100%;
+}
+
+.dog_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+
+.small_dog_image {
+    display: inline;
+    margin: 20px;
+    border: 1px solid white;
+}
+
+.dog_location {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.dog_contact {
+    margin-bottom: 30px;
+}
+
+.adopt_li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#bio {
+    font-size: 18px;
+}
+
+#adoption_bio {
+    background-color: white;
+    width: 70%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 1px dashed black;
+}
+
+.petfinder_button {
+    width: 30%;
+    background-color: cadetblue;
+    line-height: 35px;
+    border-radius: 3px 3px;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+}
+
+.pic_h2 {
+    font-size: 30px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+.submit_pic {
+    display: inline;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 30%;
+    background-color: cadetblue;
+    line-height: 35px;
+    border-radius: 3px 3px;
+    padding: 5px;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+}
+
+#show_one_pic {
+    width: 80%;
+    height: 80%;
+    border: 1px solid white;
+}
+
+.show_all_pic {
+    width: 35%;
+    margin: 5%;
+    border: 1px solid white;
+}
+
+.button_div {
+    display: inline;
+}
+
+#shelter_name {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+    text-shadow: black 2px 2px;
+}
+
+.shelter_ul > li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.shelter_email {
+    color: black;
+}
+
+.contact_a {
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* psuedo */
 
 .nav:hover {
     opacity: 1.0;
@@ -626,9 +779,6 @@ input:hover {
     text-decoration: underline;
 }
 
-#bottom:hover {
-    background-color: white;
-}
 
 
 
@@ -698,10 +848,10 @@ input:hover {
         display: block;
         width: 100%;
         font-family: sans-serif;
-        font-size: 17px;
+        font-size: 20px;
         padding-top: 1.75%;
         padding-bottom: 1.75%;
-        margin: 1%;
+        margin: 3%;
         color: slategray;
     }
 
@@ -908,10 +1058,10 @@ input:hover {
         display: block;
         width: 100%;
         font-family: sans-serif;
-        font-size: 17px;
+        font-size: 125%;
         padding-top: 2.75%;
         padding-bottom: 2.75%;
-        margin: 1%;
+        margin: 1.5%;
         color: slategray;
     }
 
@@ -1002,7 +1152,29 @@ input:hover {
         /* top: 4790px; */
         /* left: 170px; */
     }
+
+    .small_dog_image {
+        display: inline;
+        margin: 20px;
+        border: 1px solid white;
+        width: 30%;
+    }
+
+    .petfinder_button {
+        width: 30%;
+        background-color: cadetblue;
+        line-height: 35px;
+        border-radius: 3px 3px;
+        padding: 5px;
+        margin-bottom: 20px;
+        font-family: fantasy;
+        font-weight: 900;
+        font-size: 15px;
+        text-align: center;
+    }
 }
+
+
 
 /*iPhone landscape*/
 
@@ -1287,9 +1459,98 @@ input:hover {
         margin-top: 40px;
     }
 
+    .petfinder_button {
+        width: 38%;
+        background-color: cadetblue;
+        line-height: 35px;
+        border-radius: 3px 3px;
+        padding: 5px;
+        margin-bottom: 20px;
+        font-family: fantasy;
+        font-weight: 900;
+        font-size: 73%;
+        text-align: center;
+    }
+
+    .show_all_pic {
+        width: 40%;
+        height: 31%;
+        margin: 3%;
+        border: 1px solid white;
+    }
+
+    #bottom {
+        position: relative;
+        width: 62%;
+        height: auto;
+        background-color: #262626;
+        border: 3px solid white;
+        bottom: 498px;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: bottom;
+    }
+
+    #right {
+        width: 48%;
+        height: auto;
+        background-color: white;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -6%;
+        display: inline-block;
+        vertical-align: top;
+        background-color: slategray;
+        border: 3px solid white;
+        padding-left: 2.5%;
+        padding-right: 3.5%;
+        padding-bottom: 1%;
+    }
+
+    .small_dog_image {
+        display: inline;
+        margin: 5px;
+        border: 1px solid white;
+        width: 30%;
+    }
+
 
 }
 
 /*iPhone portrait*/
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    .for {
+        width: 287px;
+        height: 300px;
+        margin: 30px;
+        border: 3px solid white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        border-radius: 75px;
+    }
+
+    .nav {
+        width: 62px;
+        height: 125px;
+        opacity: 0.5;
+    }
+
+    .search {
+        text-decoration: underline;
+        font-size: 16px;
+        font-weight: 900;
+        font-family: fantasy;
+    }
+
+    .find {
+        font-family: cursive;
+        font-size: 14px;
+        display: inline;
+        margin-top: 30px;
+    }
+}
