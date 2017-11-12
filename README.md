@@ -1,3 +1,25 @@
+<form class="search_form_other">
+    <!-- <h1 class="search_article"> -->
+    <h1 class="search_article_other">FIND A SHELTER</h1>
+    <!-- <h2 class="find_article"> -->
+    <h2 class="find_article_other">Search by:</h2><br>
+    <!-- <label class="search_filters_article"> -->
+    <!-- class="location_article" -->
+    <label class="search_filters_article">Location</label>
+    <input type="text" name="location" placeholder=" i.e 76024" class="location_article"><br>
+    <!-- <label class="search_filters_article"> -->
+    <!-- class="location_article" -->
+    <label class="search_filters_article">Name</label>
+    <input type="text" name="name" placeholder=" i.e Rescue Shelter" class="location_article"><br>
+    <!-- id="submit" -->
+    <input type="submit" value="Find My Shelter!" id="submit">
+
+                </form>
+
+
+
+
+
 # Pet Adoption API Capstone
 Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with dogCEO API and RescueGroups API
 

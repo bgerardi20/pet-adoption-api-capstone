@@ -84,24 +84,24 @@ function displayRandomSearchResults(resultsArray) {
 
     buildTheHtmlOutput += '<div class="adoption_results">';
 
-    buildTheHtmlOutput += '<div class="name_container">';
+    buildTheHtmlOutput += '<section class="name_container">';
     buildTheHtmlOutput += '<h1 class="dog_name">' + resultsArray.name.$t + '</h1>';
     if (resultsArray.breeds.breed.length > 1) {
         buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArray.breeds.breed[0].$t + ' ' + resultsArray.animal.$t + '</h2>';
     } else {
         buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArray.breeds.breed.$t + ' ' + resultsArray.animal.$t + '</h2>';
     }
-    buildTheHtmlOutput += '</div>';
+    buildTheHtmlOutput += '</section>';
 
-    buildTheHtmlOutput += '<div class="image_container">';
+    buildTheHtmlOutput += '<section class="image_container">';
     if (resultsArray.media.length != 0) {
         buildTheHtmlOutput += '<img src="' + resultsArray.media.photos.photo[2].$t + '" alt="big_dog_pic" class="dog_image">';
     } else {
         buildTheHtmlOutput += '<img src="images/no-image-vector-file.png" alt="big_dog_pic" class="dog_image">';
     }
-    buildTheHtmlOutput += '</div>';
+    buildTheHtmlOutput += '</section>';
 
-    buildTheHtmlOutput += '<div class="contact_container">';
+    buildTheHtmlOutput += '<section class="contact_container">';
     buildTheHtmlOutput += '<h3 class="dog_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + resultsArray.contact.address1.$t + ' ' + resultsArray.contact.city.$t + ' ' + resultsArray.contact.state.$t + ' ' + resultsArray.contact.zip.$t + '</h3>';
     buildTheHtmlOutput += '<div class="dog_contact">';
     buildTheHtmlOutput += '<ul class="adopt_ul">';
@@ -109,7 +109,7 @@ function displayRandomSearchResults(resultsArray) {
     buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + resultsArray.contact.email.$t + '</a></li>';
     buildTheHtmlOutput += '</ul>';
     buildTheHtmlOutput += '</div>';
-    buildTheHtmlOutput += '</div>';
+    buildTheHtmlOutput += '</section>';
 
     buildTheHtmlOutput += '<a href="https://www.petfinder.com/petdetail/' + resultsArray.id.$t + '"  class="petfinder_button" target="_blank">View My Petfinder Page</a>';
     buildTheHtmlOutput += '</div>';
@@ -164,24 +164,24 @@ function displaySpecificSearchResults(resultsArray) {
 
         buildTheHtmlOutput += '<div class="adoption_results">';
 
-        buildTheHtmlOutput += '<div class="name_container">';
+        buildTheHtmlOutput += '<section class="name_container">';
         buildTheHtmlOutput += '<h1 class="dog_name">' + resultsArrayValue.name.$t + '</h1>';
         if (resultsArrayValue.breeds.breed.length > 1) {
             buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArrayValue.breeds.breed[0].$t + ' ' + resultsArrayValue.animal.$t + '</h2>';
         } else {
             buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArrayValue.breeds.breed.$t + ' ' + resultsArrayValue.animal.$t + '</h2>';
         }
-        buildTheHtmlOutput += '</div>';
+        buildTheHtmlOutput += '</section';
 
-        buildTheHtmlOutput += '<div class="image_container">';
+        buildTheHtmlOutput += '<section class="image_container">';
         if (resultsArrayValue.media.length != 0) {
             buildTheHtmlOutput += '<img src="' + resultsArrayValue.media.photos.photo[2].$t + '" alt="big_dog_pic" class="dog_image">';
         } else {
             buildTheHtmlOutput += '<img src="images/no-image-vector-file.png" alt="big_dog_pic" class="dog_image">';
         }
-        buildTheHtmlOutput += '</div>';
+        buildTheHtmlOutput += '</section>';
 
-        buildTheHtmlOutput += '<div class="contact_container">';
+        buildTheHtmlOutput += '<section class="contact_container">';
         buildTheHtmlOutput += '<h3 class="dog_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + resultsArrayValue.contact.address1.$t + ' ' + resultsArrayValue.contact.city.$t + ' ' + resultsArrayValue.contact.state.$t + ' ' + resultsArrayValue.contact.zip.$t + '</h3>';
         buildTheHtmlOutput += '<div class="dog_contact">';
         buildTheHtmlOutput += '<ul class="adopt_ul">';
@@ -189,7 +189,7 @@ function displaySpecificSearchResults(resultsArray) {
         buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + resultsArrayValue.contact.email.$t + '</a></li>';
         buildTheHtmlOutput += '</ul>';
         buildTheHtmlOutput += '</div>';
-        buildTheHtmlOutput += '</div>';
+        buildTheHtmlOutput += '</section>';
 
         buildTheHtmlOutput += '<a href="https://www.petfinder.com/petdetail/' + resultsArrayValue.id.$t + '"  class="petfinder_button" target="_blank">View My Petfinder Page</a>';
         buildTheHtmlOutput += '</div>';
@@ -198,3 +198,123 @@ function displaySpecificSearchResults(resultsArray) {
     //use the HTML output to show it in the index.html
     $(".results_container").html(buildTheHtmlOutput);
 };
+
+
+
+function getShelterSearchResults(userLocation, userName) {
+    var params = {
+        key: 'ba13b6abb4f8162d2d70780f5d2a8d35',
+        /*animal: userAnimal, */
+        /*output: 'full', */
+        format: 'json',
+        /*breed: userBreed,*/
+        location: userLocation,
+        name: userName,
+        /*offset: ? */
+        count: 10
+    };
+    var result = $.ajax({
+            /* update API end point */
+            url: 'https://api.petfinder.com/pet.find',
+            data: params,
+            dataType: "jsonp",
+            /*set the call type GET / POST*/
+            type: "GET"
+        })
+        /* if the call is successful (status 200 OK) show results */
+        .done(function (result) {
+            /* if the results are meeningful, we can just console.log them */
+            console.log(result);
+            console.log(result.petfinder.pets.pet);
+            displayShelterSearchResults(result.petfinder.pets.pet);
+        })
+        /* if the call is NOT successful show errors */
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+}
+
+function displayShelterSearchResults(resultsArray) {
+
+    //create an empty variable to store one LI for each one the results
+    var buildTheHtmlOutput = "";
+
+    $.each(resultsArray, function (resultsArrayKey, resultsArrayValue) {
+
+        buildTheHtmlOutput += '<section class="results_container text-left">';
+        buildTheHtmlOutput += '<div class="shelter_results">';
+        buildTheHtmlOutput += '<h2 id="shelter_name">' + resultsArrayValue.shelterId.$t + '</h2>';
+        buildTheHtmlOutput += '<ul class="shelter_ul">';
+        buildTheHtmlOutput += '<li id="shelter_location"><i class="fa fa-map-marker" aria-hidden="true"></i>' + resultsArrayValue.contact.address1.$t + ' ' + resultsArrayValue.contact.city.$t + ' ' + resultsArrayValue.contact.state.$t + ' ' + resultsArrayValue.contact.zip.$t + '</li>';
+        buildTheHtmlOutput += '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i>' + resultsArrayValue.contact.phone.$t + '</li>';
+        buildTheHtmlOutput += '<li id="shelter_email"><a href="" class="shelter_email"><i class="fa fa-envelope" aria-hidden="true"> </i>' +
+            resultsArrayValue.contact.email.$t + '</a></li>';
+        buildTheHtmlOutput += '</ul>';
+        buildTheHtmlOutput += '</div>';
+        buildTheHtmlOutput += '</section>';
+    });
+
+};
+
+//use the HTML output to show it in the index.html
+$("results_container text-left").html(buildTheHtmlOutput);
+
+
+
+
+
+function getPictureSearchResults() {
+    var params = {
+        key: 'ba13b6abb4f8162d2d70780f5d2a8d35',
+        animal: userAnimal,
+        output: 'full',
+        format: 'json',
+        breed: userBreed,
+        count: 10
+    };
+    var result = $.ajax({
+            /* update API end point */
+            url: 'https://api.petfinder.com/pet.find',
+            data: params,
+            dataType: "jsonp",
+            /*set the call type GET / POST*/
+            type: "GET"
+        })
+        /* if the call is successful (status 200 OK) show results */
+        .done(function (result) {
+            /* if the results are meeningful, we can just console.log them */
+            console.log(result);
+            console.log(result.petfinder.pets.pet);
+            displaySpecificSearchResults(result.petfinder.pets.pet);
+        })
+        /* if the call is NOT successful show errors */
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+}
+
+function displayPictureSearchResults() {
+    //create an empty variable to store one LI for each one the results
+    var buildTheHtmlOutput = "";
+
+    $.each(resultsArray, function () {
+
+        buildTheHtmlOutput += '<section class="results_container">';
+        buildTheHtmlOutput += '<div class="one_pic">';
+        buildTheHtmlOutput += '<h2 class="pic_h2">' + Breed: +'</h2>';
+        buildTheHtmlOutput += '<img src="images/night-animal-dog-pet.jpg" alt="dog_pic" id="show_one_pic" width="500px" height="250px">';
+        buildTheHtmlOutput += '<div class="button_div">';
+        buildTheHtmlOutput += '<input type="submit" value="Next" class="submit_pic">';
+        buildTheHtmlOutput += '<input type="submit" value="Reset" class="submit_pic">';
+        buildTheHtmlOutput += '</div>';
+        buildTheHtmlOutput += '</div>'
+
+    });
+}
+
+//use the HTML output to show it in the index.html
+$("results_container").html(buildTheHtmlOutput);

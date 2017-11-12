@@ -4,8 +4,6 @@
     font-size: 100%;
     border: 0px;
     box-sizing: border-box;
-    /*remove before going live */
-    /* border: 1px solid; */
 }
 
 body {
@@ -208,7 +206,7 @@ footer {
     /* float: left; */
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 46%;
     left: 50%;
 }
 
@@ -269,7 +267,7 @@ footer {
     line-height: 35px;
     border-radius: 3px 3px;
     padding: 5px;
-    margin-top: 23px;
+    margin-top: 14px;
     font-family: fantasy;
     font-weight: 900;
     font-size: large;
@@ -294,12 +292,6 @@ footer {
     margin: 5px;
 }
 
-/* dont need
-.content {
-position: relative;
-top: 28px;
-text-align: center;
-} */
 
 .essentials {
     text-align: center;
@@ -475,22 +467,6 @@ text-align: center;
     left: 245px;
 }
 
-.search_filters_article {
-    font-size: 17px;
-    display: block;
-    font-family: sans-serif;
-    position: relative;
-    top: 4790px;
-    right: 317px;
-    /* left: 200px; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* color: white; */
-    text-align: center;
-    margin-top: 7px;
-    margin-bottom: 8px;
-}
-
 .border_article {
     opacity: .85;
     border-radius: 20%;
@@ -572,6 +548,7 @@ text-align: center;
 .blah {
     width: 100%;
     margin: 0 auto;
+    display: inline-block;
 }
 
 .other_blah {
@@ -579,12 +556,18 @@ text-align: center;
     padding-top: 0.5%;
 }
 
+.shelter_form {
+    position: relative;
+    text-align: center;
+    margin: 60px;
+}
+
 .other_border {
-    width: 100%;
+    width: 45%;
     height: 370px;
     opacity: .85;
     border-radius: 20%;
-    position: relative;
+    position: absolute;
 }
 
 .other_h2 {
@@ -1275,14 +1258,27 @@ input:hover {
         left: 50%;
     }
 
-    .search_form_other {
+    .stupid {
+        margin: 1px;
+    }
+
+    .shelter_label {
+        margin: 1px;
+    }
+
+    .shelter_input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /*.search_form_other {
         width: 93%;
         height: 60%;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
-    }
+    }*/
     .location {
         background-color: antiquewhite;
         line-height: 15px;
@@ -1417,24 +1413,23 @@ input:hover {
         margin-bottom: 8px;
     }
 
-    .location_article {
+    /* .location_article {
         background-color: antiquewhite;
         line-height: 15px;
         width: 150px;
         border: 1px solid white;
         border-radius: 3px 3px;
-        /* margin-bottom: 50px; */
-        /* margin-top: 20px; */
-        /* margin-left: 5px; */
-        /* margin-right: 4px; */
+         margin-bottom: 50px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 4px;
         font-style: italic;
         padding: 1px;
         position: relative;
-        /* right: 44%; */
+        right: 44%;
         top: 4660px;
         left: 35px;
-    }
-
+    } */
     #submit {
         width: 33%;
         background-color: cadetblue;

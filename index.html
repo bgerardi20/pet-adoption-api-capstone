@@ -27,13 +27,13 @@
 
     <main class="home">
 
-        <div class="video_container">
+        <section class="video_container">
 
             <iframe class="statement" width="100%" height="400px" src="https://www.youtube.com/embed/AsxKpr8fTmQ" frameborder="0" allowfullscreen></iframe>
 
-        </div>
+        </section>
 
-        <div class="stats">
+        <section class="stats">
             <h2 class="h2_checklist">Adoption Statistics from 2016</h2>
             <ul class="list">
                 <li class="adopt_stats">Approximately 4 million shelter animals are adopted each year.</li>
@@ -42,13 +42,13 @@
                 <li class="adopt_stats">Estimated number of rescue groups and animal shelters in North America is 10,000</li>
                 <li class="adopt_stats">Estimated amount spent by animal control orgainzations annually is $800 million to $1 billion.</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="random_pet_results_container">
+        <section class="random_pet_results_container">
 
 
 
-        </div>
+        </section>
 
         <div class="slider slider-for">
             <div>
@@ -104,7 +104,7 @@
 
     <main class="adoption">
 
-        <div class="adoption_container">
+        <section class="adoption_container">
             <!--make this a drop down -->
             <div class="container">
 
@@ -156,13 +156,13 @@
 
             </div>
 
-        </div>
+        </section>
 
-        <div class="results_container">
+        <section class="results_container">
 
 
 
-        </div>
+        </section>
 
     </main>
 
@@ -181,7 +181,7 @@
 
     <main class="cute_dogs">
 
-        <div class="picture_container">
+        <section class="picture_container">
 
             <!--possibly drop down? -->
             <div class="container">
@@ -216,9 +216,9 @@
 
             </div>
 
-        </div>
+        </section>
 
-        <div class="results_container">
+        <section class="results_container">
 
             <div class="one_pic">
 
@@ -251,7 +251,7 @@
 
             </div>
 
-        </div>
+        </section>
 
     </main>
 
@@ -268,26 +268,20 @@
             </nav>
         </header>
 
-        <div class="blah">
+        <section class="blah">
+
             <div id="left">
                 <!-- class="border_article" -->
                 <img src="images/dog_border.gif" alt="paw_border" class="other_border" width="" height="300">
 
-                <form class="search_form_other">
-                    <!-- <h1 class="search_article"> -->
-                    <h1 class="search_article_other">FIND A SHELTER</h1>
-                    <!-- <h2 class="find_article"> -->
-                    <h2 class="find_article_other">Search by:</h2><br>
-                    <!-- <label class="search_filters_article"> -->
-                    <!-- class="location_article" -->
-                    <label class="search_filters_article">Location</label>
-                    <input type="text" name="location" placeholder=" i.e 76024" class="location_article"><br>
-                    <!-- <label class="search_filters_article"> -->
-                    <!-- class="location_article" -->
-                    <label class="search_filters_article">Name</label>
-                    <input type="text" name="name" placeholder=" i.e Rescue Shelter" class="location_article"><br>
-                    <!-- id="submit" -->
-                    <input type="submit" value="Find My Shelter!" id="submit">
+                <form class="shelter_form">
+                    <h1 class="stupid">FIND A SHELTER</h1><br>
+                    <h2 class="stupid">Search By:</h2><br>
+                    <label for="location" class="shelter_label">Location</label><br>
+                    <input type="text" name="location" placeholder="76021" class="shelter_input"><br>
+                    <label for="name" class="shelter_label">Name</label><br>
+                    <input type="text" name="name" placeholder="name" class="shelter_input"><br>
+                    <input type="submit" value="Find My Shelter!" class="submit">
 
                 </form>
 
@@ -317,10 +311,10 @@
 
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="other_blah">
+        <section class="other_blah">
             <div id="bottom">
                 <!-- <h2 class="h2_checklist"> -->
                 <!-- <ul class="list"> -->
@@ -341,9 +335,14 @@
                 </ul>
 
             </div>
-        </div>
+        </section>
 
-        <div class="results_container text-left">
+
+        <section class="results_container text-left">
+
+
+        </section>
+        <!--<section class="results_container text-left">
 
             <div class="shelter_results">
 
@@ -357,7 +356,7 @@
 
             </div>
 
-        </div>
+        </section>-->
 
     </main>
 
