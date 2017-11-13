@@ -177,6 +177,7 @@ footer {
     margin-top: 2rem;
     font-family: fantasy;
     color: white;
+    text-shadow: black 2px 2px;
 }
 
 .adoption_container,
@@ -261,7 +262,8 @@ footer {
     padding: 1px;
 }
 
-.submit {
+.submit,
+.submit_shelter {
     width: 50%;
     background-color: cadetblue;
     line-height: 35px;
@@ -354,8 +356,9 @@ footer {
 }
 
 .results_container,
-.random_pet_results_container {
-    width: 80%;
+.random_pet_results_container,
+.shelter_results_container {
+    width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -560,6 +563,7 @@ footer {
     position: relative;
     text-align: center;
     margin: 60px;
+    font-size: 20px;
 }
 
 .other_border {
@@ -1178,6 +1182,7 @@ input:hover {
         margin-top: 2rem;
         font-family: fantasy;
         color: white;
+        text-shadow: black 2px 2px;
     }
 
     .nav_options {
@@ -1260,15 +1265,19 @@ input:hover {
 
     .stupid {
         margin: 1px;
+
     }
 
     .shelter_label {
         margin: 1px;
+        font-size: 20px;
+        text-align: center;
     }
 
     .shelter_input {
         margin-top: 10px;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     /*.search_form_other {
@@ -1548,15 +1557,250 @@ input:hover {
 
     .search {
         text-decoration: underline;
-        font-size: 16px;
-        font-weight: 900;
+        font-size: 14px;
+        /* font-weight: 500; */
         font-family: fantasy;
+    }
+
+    .adopt_li {
+        display: block;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .petfinder_button {
+        width: 38%;
+        background-color: cadetblue;
+        line-height: 35px;
+        border-radius: 3px 3px;
+        padding: 5px;
+        margin-bottom: 20px;
+        font-family: fantasy;
+        font-weight: 900;
+        font-size: 73%;
+        text-align: center;
+        display: inline;
     }
 
     .find {
         font-family: cursive;
-        font-size: 14px;
+        font-size: 13px;
         display: inline;
-        margin-top: 30px;
+        /* margin-top: 17px; */
     }
+
+    .search_filters {
+        font-size: 11px;
+        display: inline;
+        font-family: sans-serif;
+    }
+
+    .location {
+        background-color: antiquewhite;
+        height: 17px;
+        width: 60px;
+        border: 1px solid black;
+        border-radius: 3px 3px;
+        /* margin-bottom: 50px; */
+        /* margin-top: 20px; */
+        /* margin-left: 5px; */
+        /* margin-right: 4px; */
+        font-style: italic;
+        padding: 3px;
+    }
+
+    select {
+        width: 25%;
+        height: 0%;
+        background-color: antiquewhite;
+        border: 1px solid black;
+        border-radius: 3px 3px;
+        margin-top: 8px;
+        margin-left: 5px;
+        margin-right: 4px;
+        font-style: italic;
+        padding: 1px;
+        font-size: 10px;
+    }
+
+    .location {
+        background-color: antiquewhite;
+        height: 17px;
+        width: 60px;
+        border: 1px solid black;
+        border-radius: 3px 3px;
+        /* margin-bottom: 50px; */
+        /* margin-top: 20px; */
+        /* margin-left: 5px; */
+        /* margin-right: 4px; */
+        font-style: italic;
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    label {
+        margin: 0px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .submit {
+        width: auto;
+        background-color: cadetblue;
+        line-height: 7px;
+        border-radius: 3px 3px;
+        padding: 5px;
+        margin-top: 0px;
+        font-family: fantasy;
+        font-size: 12px;
+    }
+
+    .submit_shelter {
+        width: auto;
+        background-color: cadetblue;
+        line-height: 20px;
+        padding: 5px;
+        margin-top: 0px;
+        font-family: fantasy;
+        font-size: 18px;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        /* height: auto; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        display: inline-block;
+    }
+
+    .shelter_form {
+        position: relative;
+        text-align: center;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        /* display: inline; */
+    }
+
+    .shelter_label {
+        /* margin: 12px; */
+        font-size: 16px;
+    }
+
+    .other_border {
+        width: 93%;
+        height: 370px;
+        opacity: .85;
+        border-radius: 20%;
+        position: absolute;
+    }
+
+    #left {
+        width: 100%;
+        height: 10%;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    .stupid {
+        font-size: 18px;
+    }
+
+    .shelter_input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #right {
+        width: 60%;
+        height: auto;
+        background-color: white;
+        border: 1px solid black;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        display: block;
+        /* vertical-align: top; */
+        background-color: slategray;
+        border: 3px solid white;
+        padding-left: 2.5%;
+        padding-right: 3.5%;
+        padding-bottom: 1%;
+    }
+
+    .other_blah {
+        width: 50%;
+        padding-top: 0.5%;
+        display: inline;
+    }
+
+    #bottom {
+        position: static;
+        width: 70%;
+        height: auto;
+        background-color: #262626;
+        border: 3px solid white;
+        /* bottom: 498px; */
+        margin-left: auto;
+        margin-right: auto;
+        /* vertical-align: bottom; */
+        /* display: block; */
+    }
+
+    .shelter_ul li {
+        display: block;
+        padding: 0 20px;
+        font-size: 20px;
+        border-bottom: 1px solid red;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #shelter_name {
+        font-size: 32px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        display: block;
+        color: white;
+        text-shadow: black 2px 2px;
+    }
+
+    .shelter_ul li:last-child {
+        border-bottom: 0;
+    }
+
+    .shelter_ul li {
+        border-right: 0;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-family: fantasy;
+        color: white;
+        display: block;
+        text-shadow: black 2px 2px;
+    }
+
+    .video_container {
+        width: 90%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 47px;
+    }
+
+
 }
