@@ -34,9 +34,9 @@ $(document).ready(function () {
         event.preventDefault();
         //get the value from the input box
         var userLocation = $("input[name='location']").val();
-        var userName = $("select[name='name']").val();
-        console.log(userLocation, userName);
-        getShelterSearchResults(userLocation, userName);
+
+        console.log(userLocation);
+        getShelterSearchResults(userLocation);
     });
 });
 
@@ -212,13 +212,11 @@ function displaySpecificSearchResults(resultsArray) {
 
 
 
-function getShelterSearchResults(userLocation, userName) {
+function getShelterSearchResults(userLocation) {
     var params = {
         key: 'ba13b6abb4f8162d2d70780f5d2a8d35',
         format: 'json',
         location: userLocation,
-        name: userName,
-        offset: 10,
         count: 10
     };
     var result = $.ajax({

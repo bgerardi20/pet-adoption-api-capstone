@@ -157,7 +157,7 @@ footer {
 .nav {
     width: 300px;
     height: 200px;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .pictures {
@@ -523,10 +523,8 @@ footer {
 
 #left {
     width: 50%;
-    height: 10%;
+    height: auto;
     border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
     display: inline-block;
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -537,8 +535,6 @@ footer {
     height: auto;
     background-color: white;
     border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
     display: inline-block;
     vertical-align: top;
     background-color: slategray;
@@ -756,10 +752,6 @@ footer {
 
 /* psuedo */
 
-.nav:hover {
-    opacity: 1.0;
-}
-
 input:hover {
     background-color: cadetblue;
     color: white;
@@ -816,7 +808,6 @@ input:hover {
     .nav {
         width: 250px;
         height: 200px;
-        opacity: 0.5;
     }
 
     .container {
@@ -984,7 +975,6 @@ input:hover {
     .nav {
         width: 185px;
         height: 200px;
-        opacity: 0.5;
     }
 
     .container {
@@ -1278,7 +1268,6 @@ input:hover {
     .nav {
         width: 110px;
         height: 200px;
-        opacity: 0.5;
     }
 
     .slick-list {
@@ -1612,7 +1601,6 @@ input:hover {
     .nav {
         width: 62px;
         height: 125px;
-        opacity: 0.5;
     }
 
     .search {
