@@ -261,7 +261,7 @@ function displaySpecificSearchResults(resultsArray) {
         buildTheHtmlOutput += '<div class="dog_contact">';
         buildTheHtmlOutput += '<ul class="adopt_ul">';
         buildTheHtmlOutput += '<li class="adopt_li"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArrayValue.contact.phone.$t) + '</li>';
-        buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + checkText(resultsArrayValue.contact.email.$t) s + '</a></li>';
+        buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + checkText(resultsArrayValue.contact.email.$t) + '</a></li>';
         buildTheHtmlOutput += '</ul>';
         buildTheHtmlOutput += '</div>';
         buildTheHtmlOutput += '</section>';
