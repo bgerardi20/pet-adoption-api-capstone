@@ -922,6 +922,30 @@ input:hover {
         bottom: 310px;
         left: 101px;
     }
+
+    .shelter_results_container {
+        width: 95%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border: 1px solid black;
+        background-color: slategray;
+        text-align: center;
+    }
+
+    .submit {
+        width: 50%;
+        background-color: cadetblue;
+        line-height: 27px;
+        border-radius: 3px 3px;
+        padding: 5px;
+        margin-top: 14px;
+        font-family: fantasy;
+        font-weight: 900;
+        font-size: large;
+    }
 }
 
 /*ipad potrait*/
@@ -1170,6 +1194,26 @@ input:hover {
         font-size: 15px;
         text-align: center;
     }
+
+    .submit_shelter {
+        width: auto;
+        background-color: cadetblue;
+        line-height: 35px;
+        border-radius: 3px 3px;
+        padding: 5px;
+        margin-top: 14px;
+        font-family: fantasy;
+        font-weight: 900;
+        font-size: large;
+    }
+
+    .shelter_ul li {
+        display: inline;
+        padding: 0 20px;
+        font-size: 14px;
+        border-right: 1px solid red;
+        /* width: auto; */
+    }
 }
 
 
@@ -1278,6 +1322,7 @@ input:hover {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
+        width: 60%;
     }
 
     /*.search_form_other {
@@ -1318,13 +1363,14 @@ input:hover {
     }
 
     .submit {
-        width: 33%;
+        width: auto;
         background-color: cadetblue;
-        line-height: 16px;
+        line-height: 7px;
         border-radius: 3px 3px;
         padding: 5px;
         margin-top: 5px;
         font-family: fantasy;
+        font-size: 14px;
     }
 
     select {
@@ -1530,6 +1576,20 @@ input:hover {
         width: 30%;
     }
 
+    .shelter_ul li {
+        display: block;
+        padding: 0 20px;
+        font-size: 14px;
+        /* border-bottom: 1px solid red; */
+        /* width: auto; */
+    }
+
+    .shelter_form {
+        position: relative;
+        text-align: center;
+        /* margin: 60px; */
+        font-size: 20px;
+    }
 
 }
 
