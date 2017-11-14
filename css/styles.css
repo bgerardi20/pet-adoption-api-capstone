@@ -89,7 +89,7 @@ footer {
 }
 
 .logo {
-    width: 47px;
+    width: 5%;
     vertical-align: middle;
     margin-right: 1rem;
 }
@@ -113,25 +113,23 @@ footer {
 .video_container {
     width: 90%;
     display: block;
+    margin-top: 47px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 47px;
 }
 
 .statement {
-    position: relative;
-    top: 28px;
-    text-align: center;
+    border: 3px solid white;
 }
 
 .stats {
     background-color: slategray;
     display: inline-block;
-    width: 40%;
+    width: 90%;
     vertical-align: top;
     margin: 4%;
     border: 3px solid white;
-    border-radius: 5%;
 }
 
 .slider slider-for {
@@ -142,26 +140,23 @@ footer {
 }
 
 .for {
-    width: 1000px;
-    height: 300px;
+    width: 90%;
+    height: 700px;
     margin: 30px;
     border: 3px solid white;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    border-radius: 75px;
 }
 
 .nav {
-    width: 300px;
+    width: 100%;
     height: 200px;
     opacity: 1;
+    border: 1px solid white;
 }
 
 .pictures {
-    width: 300px;
+    width: 95%;
 }
 
 .adoption_container,
@@ -188,12 +183,11 @@ footer {
 }
 
 .container {
-    position: relative;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    background-color: slategray;
     margin-top: 80px;
     display: inline-block;
+    border: 3px solid white;
 }
 
 .border {
@@ -202,13 +196,7 @@ footer {
 }
 
 .search_form {
-    width: 94%;
-    height: 70%;
-    /* float: left; */
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 46%;
-    left: 50%;
+    width: 100%;
 }
 
 .search {
@@ -297,14 +285,12 @@ footer {
 
 .essentials {
     text-align: center;
-    display: block;
-    width: 100%;
     font-family: sans-serif;
     font-size: 20px;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     margin: 2.3%;
-    color: slategray;
+    color: white;
 }
 
 .adopt_stats {
@@ -364,7 +350,7 @@ footer {
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 50px;
-    border: 1px solid black;
+    border: 3px solid white;
     background-color: slategray;
     text-align: center;
 }
@@ -379,9 +365,10 @@ footer {
     font-family: sans-serif;
 }
 
+/*
 .article_list {
     width: 40%;
-    /* height: 600px; */
+     height: 600px;
     border: 1px solid black;
     background-color: whitesmoke;
     margin-left: auto;
@@ -390,6 +377,7 @@ footer {
     left: 25%;
 
 }
+*/
 
 .right_h1 {
     font-size: 30px;
@@ -522,19 +510,18 @@ footer {
 }
 
 #left {
-    width: 50%;
-    height: auto;
-    border: 1px solid black;
+    width: 100%;
+    border: 3px solid white;
     display: inline-block;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    background-color: slategray;
 }
 
 #right {
-    width: 48%;
+    width: 100%;
     height: auto;
     background-color: white;
-    border: 1px solid black;
     display: inline-block;
     vertical-align: top;
     background-color: slategray;
@@ -545,13 +532,13 @@ footer {
 }
 
 .blah {
-    width: 100%;
+    width: 45%;
     margin: 0 auto;
     display: inline-block;
 }
 
 .other_blah {
-    width: 50%;
+    width: 45%;
     padding-top: 0.5%;
 }
 
@@ -582,21 +569,12 @@ footer {
 }
 
 #bottom {
-    position: relative;
-    width: 50%;
+    width: 100%;
     height: auto;
-    background-color: #262626;
+    background-color: slategray;
     border: 3px solid white;
-    bottom: 498px;
-    margin-left: auto;
-    margin-right: auto;
     vertical-align: bottom;
-
 }
-
-
-
-
 
 .dog_name {
     font-size: 40px;
@@ -793,30 +771,26 @@ input:hover {
     }
 
     .for {
-        width: 900px;
-        height: 300px;
+        width: 90%;
+        height: 600px;
         margin: 30px;
         border: 3px solid white;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-        border-radius: 75px;
     }
 
     .nav {
-        width: 250px;
+        width: 100%;
         height: 200px;
+        border: 1px solid white;
     }
 
     .container {
-        position: relative;
-        width: 87%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
+        width: 90%;
+        background-color: slategray;
+        margin-top: 60px;
         display: inline-block;
+        border: 3px solid white;
     }
 
     select {
@@ -834,14 +808,12 @@ input:hover {
 
     .essentials {
         text-align: center;
-        display: block;
-        width: 100%;
         font-family: sans-serif;
         font-size: 20px;
-        padding-top: 1.75%;
-        padding-bottom: 1.75%;
-        margin: 3%;
-        color: slategray;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        margin: 2.3%;
+        color: white;
     }
 
     .search_article_other {
@@ -915,13 +887,13 @@ input:hover {
     }
 
     .shelter_results_container {
-        width: 95%;
+        width: 90%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
         margin-bottom: 50px;
-        border: 1px solid black;
+        border: 3px solid white;
         background-color: slategray;
         text-align: center;
     }
@@ -960,30 +932,26 @@ input:hover {
     }
 
     .for {
-        width: 700px;
-        height: 300px;
+        width: 90%;
+        height: 500px;
         margin: 30px;
         border: 3px solid white;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-        border-radius: 75px;
     }
 
     .nav {
-        width: 185px;
+        width: 100%;
         height: 200px;
+        border: 1px solid white;
     }
 
     .container {
-        position: relative;
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
+        width: 90%;
+        background-color: slategray;
+        margin-top: 60px;
         display: inline-block;
+        border: 3px solid white;
     }
 
     .search_filters {
@@ -1067,14 +1035,12 @@ input:hover {
 
     .essentials {
         text-align: center;
-        display: block;
-        width: 100%;
         font-family: sans-serif;
-        font-size: 125%;
-        padding-top: 2.75%;
-        padding-bottom: 2.75%;
-        margin: 1.5%;
-        color: slategray;
+        font-size: 20px;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        margin: 2.3%;
+        color: white;
     }
 
     .url {
@@ -1246,28 +1212,24 @@ input:hover {
     .stats {
         background-color: slategray;
         display: inline-block;
-        width: 60%;
+        width: 90%;
         margin: 4%;
         border: 3px solid white;
-        border-radius: 5%;
     }
 
     .for {
-        width: 400px;
-        height: 300px;
+        width: 90%;
+        height: 400px;
         margin: 30px;
         border: 3px solid white;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-        border-radius: 75px;
     }
 
     .nav {
-        width: 110px;
+        width: 100%;
         height: 200px;
+        border: 1px solid white;
     }
 
     .slick-list {
@@ -1279,21 +1241,15 @@ input:hover {
     }
 
     .container {
-        position: relative;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
+        width: 90%;
+        background-color: slategray;
+        margin-top: 60px;
         display: inline-block;
+        border: 3px solid white;
     }
 
     .search_form {
-        width: 93%;
-        height: 75%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
+        width: 100%;
     }
 
     .stupid {
@@ -1314,14 +1270,6 @@ input:hover {
         width: 60%;
     }
 
-    /*.search_form_other {
-        width: 93%;
-        height: 60%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }*/
     .location {
         background-color: antiquewhite;
         line-height: 15px;
@@ -1419,16 +1367,12 @@ input:hover {
 
     .essentials {
         text-align: center;
-        display: block;
-        width: 100%;
         font-family: sans-serif;
-        font-size: 17px;
+        font-size: 20px;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
-        margin: 5%;
-        margin-left: 1%;
-        margin-right: 1%;
-        color: slategray;
+        margin: 2.3%;
+        color: white;
     }
 
     .find_article_other {
@@ -1507,6 +1451,7 @@ input:hover {
 
     .blah {
         margin-top: 40px;
+        width: 45%;
     }
 
     .petfinder_button {
@@ -1530,22 +1475,17 @@ input:hover {
     }
 
     #bottom {
-        position: relative;
-        width: 62%;
+        width: 100%;
         height: auto;
-        background-color: #262626;
+        background-color: slategray;
         border: 3px solid white;
-        bottom: 498px;
-        margin-left: auto;
-        margin-right: auto;
         vertical-align: bottom;
     }
 
     #right {
-        width: 48%;
+        width: 100%;
         height: auto;
         background-color: white;
-        border: 1px solid black;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: -6%;
@@ -1586,21 +1526,18 @@ input:hover {
 
 @media only screen and (max-width: 320px) {
     .for {
-        width: 287px;
+        width: 90%;
         height: 300px;
         margin: 30px;
         border: 3px solid white;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-        border-radius: 75px;
     }
 
     .nav {
-        width: 62px;
+        width: 100%;
         height: 125px;
+        border: 1px solid white;
     }
 
     .search {
@@ -1715,14 +1652,13 @@ input:hover {
         font-size: 18px;
     }
 
+
     .container {
-        position: relative;
-        width: 100%;
-        /* height: auto; */
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 80px;
+        width: 90%;
+        background-color: slategray;
+        margin-top: 60px;
         display: inline-block;
+        border: 3px solid white;
     }
 
     .shelter_form {
@@ -1751,7 +1687,7 @@ input:hover {
     #left {
         width: 100%;
         height: 10%;
-        border: 1px solid black;
+        border: 3px solid white;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -1770,10 +1706,9 @@ input:hover {
     }
 
     #right {
-        width: 60%;
+        width: 100%;
         height: auto;
         background-color: white;
-        border: 1px solid black;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -1788,22 +1723,19 @@ input:hover {
     }
 
     .other_blah {
-        width: 50%;
+        width: 45%;
         padding-top: 0.5%;
         display: inline;
     }
 
     #bottom {
         position: static;
-        width: 70%;
+        width: 100%;
         height: auto;
-        background-color: #262626;
+        background-color: slategray;
         border: 3px solid white;
-        /* bottom: 498px; */
         margin-left: auto;
         margin-right: auto;
-        /* vertical-align: bottom; */
-        /* display: block; */
     }
 
     .shelter_ul li {
@@ -1844,7 +1776,7 @@ input:hover {
     .video_container {
         width: 90%;
         display: block;
-        margin-top: 20px;
+        margin-top: 47px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 47px;
