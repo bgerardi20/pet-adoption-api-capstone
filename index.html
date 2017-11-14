@@ -110,36 +110,41 @@
 
                 <form class="search_form">
 
-                    <h2 class="find">Search ADOPTIONS by:</h2><br>
+                    <h2 class="find">Search Adoptions by:</h2><br>
 
                     <label class="search_filters">Location</label>
                     <input type="text" name="location" placeholder=" i.e 76021" value="76021" class="location"><br>
 
                     <label class="search_filters">Animal</label>
                     <!-- drop down or input? -->
-                    <select name="animal" class="location">
-                        <option value="dog" selected>dog</option>
+                    <select name="animal" class="location" id="dynamic-droppdown-trigger">
+                        <option value="" selected>Select</option>
+                        <option value="dog">dog</option>
                         <option value="cat">cat</option>
                     </select><br>
 
                     <label class="search_filters">Breed</label>
                     <!-- drop down or input? -->
-                    <select name="breed" class="location">
-                        <option value="dog" selected>dog</option>
+                    <select name="breed" class="location" id="dynamic-droppdown-populate">
+
                     </select><br>
 
                     <div class="sex_size_container">
 
                         <label for="Sex">Sex:</label>
                         <select name="sex" class="sex_size">
+                            <option value="" selected>Select</option>
+
                             <option value="F">Female</option>
-                            <option value="M" selected>Male</option>
+                            <option value="M">Male</option>
                         </select>
 
                         <label for="Size">Size:</label>
                         <select name="size" class="sex_size">
+                            <option value="" selected>Select</option>
+
                             <option value="S">Small</option>
-                            <option value="M" selected>Medium</option>
+                            <option value="M">Medium</option>
                             <option value="L">Large</option>
                             <option value="XL">Extra-large</option>
                         </select><br>
@@ -264,48 +269,41 @@
             </nav>
         </header>
 
-        <section class="blah">
+        <section class="column_wrapper">
 
             <div id="left">
 
                 <form class="shelter_form">
 
-                    <h2 class="stupid">Search SHELTER By Zipcode</h2><br>
+                    <h2 class="stupid">Search Shelters By Zipcode</h2><br>
                     <br>
                     <input type="text" name="location" placeholder="76021" class="shelter_input"><br>
                     <input type="submit" value="Find" class="submit_shelter">
 
                 </form>
 
+                <div id="bottom">
+                    <!-- <h2 class="h2_checklist"> -->
+                    <!-- <ul class="list"> -->
+                    <!-- <li class="essentials"> -->
+                    <h2 class="other_h2">Recommended Essentials Before Getting Your Pup!</h2>
+                    <ul class="list">
+                        <li class="essentials">Water/Food Bowl</li>
+                        <li class="essentials">Collar/Leash</li>
+                        <li class="essentials">A Few Toys</li>
+                        <li class="essentials">Healthy Food</li>
+                        <li class="essentials">Training Treats</li>
+                        <li class="essentials">Schedule an Initial Check-Up With a Vet</li>
+                        <li class="essentials">Bed/Pillow</li>
+                        <li class="essentials">Clicker(for training)</li>
+                        <li class="essentials">Grooming Supplies</li>
+                        <li class="essentials">Patience!!!</li>
+
+                    </ul>
+
+                </div>
+
             </div>
-
-            <div id="bottom">
-                <!-- <h2 class="h2_checklist"> -->
-                <!-- <ul class="list"> -->
-                <!-- <li class="essentials"> -->
-                <h2 class="other_h2">Recommended Essentials Before Getting Your Pup!</h2>
-                <ul class="list">
-                    <li class="essentials">Water/Food Bowl</li>
-                    <li class="essentials">Collar/Leash</li>
-                    <li class="essentials">A Few Toys</li>
-                    <li class="essentials">Healthy Food</li>
-                    <li class="essentials">Training Treats</li>
-                    <li class="essentials">Schedule an Initial Check-Up With a Vet</li>
-                    <li class="essentials">Bed/Pillow</li>
-                    <li class="essentials">Clicker(for training)</li>
-                    <li class="essentials">Grooming Supplies</li>
-                    <li class="essentials">Patience!!!</li>
-
-                </ul>
-
-            </div>
-
-
-
-        </section>
-
-
-        <section class="other_blah">
 
             <div id="right">
                 <!-- <h1 class="articles_h1"> -->
@@ -331,7 +329,18 @@
 
             </div>
 
+
+
         </section>
+
+
+        <!--
+<section class="other_blah">
+
+
+
+</section>
+-->
 
 
 

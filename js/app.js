@@ -17,6 +17,14 @@ $(document).ready(function () {
     });
     getRandomSearchResults();
 
+
+
+
+
+
+
+    $("#dynamic-droppdown-trigger").change(drop_down_list);
+
     $(".search_form").submit(function (event) {
         //if the page refreshes when you submit the form use "preventDefault()" to force JavaScript to handle the form submission
         event.preventDefault();
@@ -51,6 +59,55 @@ const STATE = {
     }
 }
 
+
+
+
+//-----------------------------------------------------------------------------------
+//breeds dynamic droppdown
+
+function drop_down_list() {
+    var animal = $('#dynamic-droppdown-trigger').val();
+
+    if (animal == "") {
+        alert("Please select an animal");
+    }
+
+    var params = {
+        key: 'ba13b6abb4f8162d2d70780f5d2a8d35',
+        animal: animal,
+        format: 'json'
+    };
+    var result = $.ajax({
+            /* update API end point */
+            url: 'https://api.petfinder.com/breed.list',
+            data: params,
+            dataType: "jsonp",
+            /*set the call type GET / POST*/
+            type: "GET"
+        })
+        /* if the call is successful (status 200 OK) show results */
+        .done(function (result) {
+            /* if the results are meeningful, we can just console.log them */
+
+            console.log(result);
+
+            var buildTheHtmlOutput = "";
+
+            $.each(result.petfinder.breeds.breed, function (resultsArrayKey, resultsArrayValue) {
+                buildTheHtmlOutput += '<option value="' + resultsArrayValue.$t + '">' + resultsArrayValue.$t + '</option>';
+            });
+            //use the HTML output to show it in the index.html
+            $("#dynamic-droppdown-populate").html(buildTheHtmlOutput);
+
+        })
+        /* if the call is NOT successful show errors */
+        .fail(function (jqXHR, error, errorThrown) {
+            console.log(jqXHR);
+            console.log(error);
+            console.log(errorThrown);
+        });
+}
+//---------------------------------------------------------------------------------------
 
 function getRandomSearchResults() {
     var params = {
@@ -140,8 +197,7 @@ function getSpecificSearchResults(userLocation, userAnimal, userBreed, userSex, 
         sex: userSex,
         size: userSize,
         count: 10,
-        //        offset: lastOffset,
-        //        breed: breed.list         where does breed.list go
+        breed: userBreed
     };
     var result = $.ajax({
             /* update API end point */
@@ -166,6 +222,14 @@ function getSpecificSearchResults(userLocation, userAnimal, userBreed, userSex, 
         });
 }
 
+function checkText(inputText) {
+    let outtext = "";
+    if (inputText != undefined) {
+        outtext = inputText;
+    }
+    return outtext;
+}
+
 function displaySpecificSearchResults(resultsArray) {
     console.log(resultsArray);
     //create an empty variable to store one LI for each one the results
@@ -176,11 +240,11 @@ function displaySpecificSearchResults(resultsArray) {
         buildTheHtmlOutput += '<div class="adoption_results">';
 
         buildTheHtmlOutput += '<section class="name_container">';
-        buildTheHtmlOutput += '<h1 class="dog_name">' + resultsArrayValue.name.$t + '</h1>';
+        buildTheHtmlOutput += '<h1 class="dog_name">' + checkText(resultsArrayValue.name.$t) + '</h1>';
         if (resultsArrayValue.breeds.breed.length > 1) {
-            buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArrayValue.breeds.breed[0].$t + ' ' + resultsArrayValue.animal.$t + '</h2>';
+            buildTheHtmlOutput += '<h2 class="dog_type">' + checkText(resultsArrayValue.breeds.breed[0].$t) + ' ' + checkText(resultsArrayValue.animal.$t) + '</h2>';
         } else {
-            buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArrayValue.breeds.breed.$t + ' ' + resultsArrayValue.animal.$t + '</h2>';
+            buildTheHtmlOutput += '<h2 class="dog_type">' + checkText(resultsArrayValue.breeds.breed.$t) + ' ' + checkText(resultsArrayValue.animal.$t) + '</h2>';
         }
         buildTheHtmlOutput += '</section';
 
@@ -193,11 +257,11 @@ function displaySpecificSearchResults(resultsArray) {
         buildTheHtmlOutput += '</section>';
 
         buildTheHtmlOutput += '<section class="contact_container">';
-        buildTheHtmlOutput += '<h3 class="dog_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + resultsArrayValue.contact.address1.$t + ' ' + resultsArrayValue.contact.city.$t + ' ' + resultsArrayValue.contact.state.$t + ' ' + resultsArrayValue.contact.zip.$t + '</h3>';
+        buildTheHtmlOutput += '<h3 class="dog_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + checkText(resultsArrayValue.contact.address1.$t) + ' ' + checkText(resultsArrayValue.contact.city.$t) + ' ' + checkText(resultsArrayValue.contact.state.$t) + ' ' + checkText(resultsArrayValue.contact.zip.$t) + '</h3>';
         buildTheHtmlOutput += '<div class="dog_contact">';
         buildTheHtmlOutput += '<ul class="adopt_ul">';
-        buildTheHtmlOutput += '<li class="adopt_li"><i class="fa fa-phone" aria-hidden="true"></i> ' + resultsArrayValue.contact.phone.$t + '</li>';
-        buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + resultsArrayValue.contact.email.$t + '</a></li>';
+        buildTheHtmlOutput += '<li class="adopt_li"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArrayValue.contact.phone.$t) + '</li>';
+        buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + checkText(resultsArrayValue.contact.email.$t) s + '</a></li>';
         buildTheHtmlOutput += '</ul>';
         buildTheHtmlOutput += '</div>';
         buildTheHtmlOutput += '</section>';
