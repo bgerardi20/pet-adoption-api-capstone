@@ -152,11 +152,11 @@ function displayRandomSearchResults(resultsArray) {
     buildTheHtmlOutput += '<div class="adoption_results">';
 
     buildTheHtmlOutput += '<section class="name_container">';
-    buildTheHtmlOutput += '<h1 class="dog_name">' + resultsArray.name.$t + '</h1>';
+    buildTheHtmlOutput += '<h1 class="dog_name">' + checkText(resultsArray.name.$t) + '</h1>';
     if (resultsArray.breeds.breed.length > 1) {
-        buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArray.breeds.breed[0].$t + ' ' + resultsArray.animal.$t + '</h2>';
+        buildTheHtmlOutput += '<h2 class="dog_type">' + checkText(resultsArray.breeds.breed[0].$t) + ' ' + checkText(resultsArray.animal.$t) + '</h2>';
     } else {
-        buildTheHtmlOutput += '<h2 class="dog_type">' + resultsArray.breeds.breed.$t + ' ' + resultsArray.animal.$t + '</h2>';
+        buildTheHtmlOutput += '<h2 class="dog_type">' + checkText(resultsArray.breeds.breed.$t) + ' ' + checkText(resultsArray.animal.$t) + '</h2>';
     }
     buildTheHtmlOutput += '</section>';
 
@@ -169,16 +169,16 @@ function displayRandomSearchResults(resultsArray) {
     buildTheHtmlOutput += '</section>';
 
     buildTheHtmlOutput += '<section class="contact_container">';
-    buildTheHtmlOutput += '<h3 class="dog_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + resultsArray.contact.address1.$t + ' ' + resultsArray.contact.city.$t + ' ' + resultsArray.contact.state.$t + ' ' + resultsArray.contact.zip.$t + '</h3>';
+    buildTheHtmlOutput += '<h3 class="dog_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + checkText(resultsArray.contact.address1.$t) + ' ' + checkText(resultsArray.contact.city.$t) + ' ' + checkText(resultsArray.contact.state.$t) + ' ' + checkText(resultsArray.contact.zip.$t) + '</h3>';
     buildTheHtmlOutput += '<div class="dog_contact">';
     buildTheHtmlOutput += '<ul class="adopt_ul">';
-    buildTheHtmlOutput += '<li class="adopt_li"><i class="fa fa-phone" aria-hidden="true"></i> ' + resultsArray.contact.phone.$t + '</li>';
-    buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + resultsArray.contact.email.$t + '</a></li>';
+    buildTheHtmlOutput += '<li class="adopt_li"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArray.contact.phone.$t) + '</li>';
+    buildTheHtmlOutput += '<li class="adopt_li"><a href="" class="contact_a"><i class="fa fa-envelope" aria-hidden="true"></i> ' + checkText(resultsArray.contact.email.$t) + '</a></li>';
     buildTheHtmlOutput += '</ul>';
     buildTheHtmlOutput += '</div>';
     buildTheHtmlOutput += '</section>';
 
-    buildTheHtmlOutput += '<a href="https://www.petfinder.com/petdetail/' + resultsArray.id.$t + '"  class="petfinder_button" target="_blank">View My Petfinder Page</a>';
+    buildTheHtmlOutput += '<a href="https://www.petfinder.com/petdetail/' + checkText(resultsArray.id.$t) + '"  class="petfinder_button" target="_blank">View My Petfinder Page</a>';
     buildTheHtmlOutput += '</div>';
 
 
@@ -316,11 +316,11 @@ function displayShelterSearchResults(resultsArray) {
 
         buildTheHtmlOutput += '<section class="shelter_results_container text-left">';
         buildTheHtmlOutput += '<div class="shelter_results">';
-        buildTheHtmlOutput += '<h2 id="shelter_name">' + resultsArrayValue.name.$t + '</h2>';
+        buildTheHtmlOutput += '<h2 id="shelter_name">' + checkText(resultsArrayValue.name.$t) + '</h2>';
         buildTheHtmlOutput += '<ul class="shelter_ul">';
-        buildTheHtmlOutput += '<li id="shelter_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + resultsArrayValue.address1.$t + ' ' + resultsArrayValue.city.$t + ' ' + resultsArrayValue.state.$t + ' ' + resultsArrayValue.zip.$t + '</li>';
-        buildTheHtmlOutput += '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> ' + resultsArrayValue.phone.$t + '</li>';
-        buildTheHtmlOutput += '<li id="shelter_email"><a href="" class="shelter_email"><i class="fa fa-envelope" aria-hidden="true"> </i> ' + resultsArrayValue.email.$t + '</a></li>';
+        buildTheHtmlOutput += '<li id="shelter_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + checkText(resultsArrayValue.address1.$t) + ' ' + checkText(resultsArrayValue.city.$t) + ' ' + checkText(resultsArrayValue.state.$t) + ' ' + checkText(resultsArrayValue.zip.$t) + '</li>';
+        buildTheHtmlOutput += '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArrayValue.phone.$t) + '</li>';
+        buildTheHtmlOutput += '<li id="shelter_email"><a href="" class="shelter_email"><i class="fa fa-envelope" aria-hidden="true"> </i> ' + checkText(resultsArrayValue.email.$t) + '</a></li>';
         buildTheHtmlOutput += '</ul>';
         buildTheHtmlOutput += '</div>';
         buildTheHtmlOutput += '</section>';
