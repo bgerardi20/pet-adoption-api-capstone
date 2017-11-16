@@ -113,7 +113,7 @@
                     <h2 class="find">Search Adoptions By:</h2><br>
 
                     <label class="search_filters">Location</label>
-                    <input type="text" name="location" placeholder=" i.e 76021" value="76021" class="location"><br>
+                    <input type="text" name="location" placeholder=" i.e 76021" value="76021" class="location">
 
                     <label class="search_filters">Animal</label>
                     <!-- drop down or input? -->
@@ -123,11 +123,13 @@
                         <option value="cat">cat</option>
                     </select><br>
 
-                    <label class="search_filters">Breed</label>
-                    <!-- drop down or input? -->
-                    <select name="breed" class="location" id="dynamic-droppdown-populate">
+                    <div class="animal_breed_container">
 
-                    </select><br>
+                        <label class="search_filters">Breed</label>
+                        <!-- drop down or input? -->
+                        <select name="breed" class="breed_select" id="dynamic-droppdown-populate"></select>
+
+                    </div>
 
                     <div class="sex_size_container">
 
