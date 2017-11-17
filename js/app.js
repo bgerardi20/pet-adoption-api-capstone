@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     $("#dynamic-droppdown-trigger").change(drop_down_list);
 
-    $(".search_form").submit(function (event) {
+    $(".adoption_search_form").submit(function (event) {
         //if the page refreshes when you submit the form use "preventDefault()" to force JavaScript to handle the form submission
         event.preventDefault();
         //get the value from the input box
@@ -67,6 +67,8 @@ const STATE = {
 
 function drop_down_list() {
     var animal = $('#dynamic-droppdown-trigger').val();
+
+    console.log(animal);
 
     if (animal == "") {
         alert("Please select an animal");

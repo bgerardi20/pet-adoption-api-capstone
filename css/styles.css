@@ -8,12 +8,21 @@
 
 body {
     background-color: black;
-    font-family: serif;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 ul {
     list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: fantasy;
 }
 
 a {
@@ -60,6 +69,19 @@ option {
 
 footer {
     text-align: center;
+    padding: 1rem;
+    border-top: 1px solid white;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: gray;
+    text-decoration: underline;
 }
 
 .nav_options {
@@ -71,9 +93,11 @@ footer {
     font-size: small;
     font-family: fantasy;
     font-weight: bold;
+    /*
     position: relative;
     left: 460px;
     bottom: 250px;
+*/
 }
 
 .nav_words {
@@ -96,9 +120,11 @@ footer {
 }
 
 .header_list {
-    margin-top: 150px;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-top: 150px; */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    float: right;
+    margin-right: 1rem;
 }
 
 .home,
@@ -131,6 +157,7 @@ footer {
     vertical-align: top;
     margin: 4%;
     border: 1px solid white;
+    padding: 1rem;
 }
 
 .slider slider-for {
@@ -221,16 +248,16 @@ footer {
     font-size: 20px;
     font-weight: 900;
 
-    position: relative;
-    left: 25%;
+    /*    position: relative;*/
+    /*    left: 25%;*/
 }
 
 .article_h2 {
     font-size: 17px;
     display: inline;
     margin-top: 30px;
-    position: relative;
-    left: 25%;
+    /*    position: relative;*/
+    /*    left: 25%;*/
 }
 
 .search_label_filter {
@@ -277,9 +304,11 @@ footer {
     font-family: fantasy;
     font-weight: 900;
     font-size: large;
+    /*
     position: relative;
     top: 4790px;
     left: 170px;
+*/
 }
 
 .bottom_footer {
@@ -357,8 +386,7 @@ footer {
 
 .pic_label {
     display: inline;
-    position: relative;
-
+    /*    position: relative;*/
 }
 
 
@@ -402,8 +430,10 @@ footer {
     font-size: 17px;
     font-weight: 900;
 
+    /*
     position: relative;
     right: 44%;
+*/
 }
 
 .search_article_other {
@@ -411,9 +441,11 @@ footer {
     font-size: 25px;
     font-weight: 900;
 
+    /*
     position: relative;
     top: 4790px;
     right: 308px;
+*/
 }
 
 .find_article {
@@ -421,8 +453,10 @@ footer {
     font-size: 16px;
     display: inline;
     margin-top: 30px;
+    /*
     position: relative;
     right: 44%;
+*/
 }
 
 .find_article_other {
@@ -430,16 +464,20 @@ footer {
     font-size: 20px;
     display: inline;
     margin-top: 30px;
+    /*
     position: relative;
     top: 4790px;
     left: 245px;
+*/
 }
 
 .border_article {
     opacity: .85;
     border-radius: 20%;
+    /*
     position: relative;
     right: 44%;
+*/
 }
 
 .location_article {
@@ -453,10 +491,10 @@ footer {
     /* margin-right: 4px; */
     font-style: italic;
     padding: 1px;
-    position: relative;
+    /*    position: relative;*/
     /* right: 44%; */
-    top: 4790px;
-    left: 203px;
+    /*    top: 4790px;*/
+    /*    left: 203px;*/
 }
 
 .shelter_container {
@@ -477,8 +515,10 @@ footer {
     margin: 4%;
     border: 1px solid white;
     border-radius: 5%;
+    /*
     position: relative;
     right: 10%;
+*/
 }
 
 .other {
@@ -667,7 +707,7 @@ footer {
 }
 
 #shelter_name {
-    font-size: 50px;
+    font-size: 25px;
     margin-top: 15px;
     margin-bottom: 5px;
     display: block;
@@ -679,7 +719,7 @@ footer {
     display: inline;
     padding: 0 20px;
     font-size: 20px;
-    border-right: 1px solid red;
+    border-right: 1px solid gray;
 }
 
 .shelter_ul li:last-child {
@@ -742,6 +782,10 @@ footer {
     color: white;
 }
 
+.url_a {
+    color: white;
+}
+
 .url_a:hover {
     color: black;
     text-decoration: underline;
@@ -765,9 +809,11 @@ footer {
         font-size: small;
         font-family: fantasy;
         font-weight: bold;
+        /*
         position: relative;
         left: 328px;
         bottom: 250px;
+*/
     }
 
     .shelter_form {
@@ -825,9 +871,9 @@ footer {
         font-size: 25px;
         font-weight: 900;
 
-        position: relative;
+        /*        position: relative;*/
         /* top: 4790px; */
-        bottom: 319px;
+        /*        bottom: 319px;*/
         /* color: white; */
         /* right: 308px; */
     }
@@ -837,19 +883,23 @@ footer {
         font-size: 20px;
         display: inline;
         margin-top: 30px;
+        /*
         position: relative;
         bottom: 315px;
         left: 175px;
+*/
     }
 
     .search_filters_article {
         font-size: 17px;
         display: block;
 
-        position: relative;
+        /*        position: relative;*/
         /* top: 4790px; */
+        /*
         bottom: 310px;
         right: 7px;
+*/
         /* margin-left: auto; */
         /* margin-right: auto; */
         /* color: white; */
@@ -869,9 +919,11 @@ footer {
         /* margin-right: 4px; */
         font-style: italic;
         padding: 1px;
+        /*
         position: relative;
         bottom: 310px;
         left: 140px;
+*/
         /* left: 203px; */
     }
 
@@ -885,9 +937,11 @@ footer {
         font-family: fantasy;
         font-weight: 900;
         font-size: large;
+        /*
         position: relative;
         bottom: 310px;
         left: 101px;
+*/
     }
 
     .shelter_results_container {
@@ -930,7 +984,7 @@ footer {
 
         font-weight: bold;
         /* position: relative; */
-        left: 242px;
+        /*        left: 242px;*/
         /* bottom: 60px; */
         /* margin-left: auto; */
         /* margin-right: auto; */
@@ -1051,8 +1105,7 @@ footer {
 
     .pic_label {
         display: inline;
-        position: relative;
-
+        /*        position: relative;*/
         font-size: 15px;
     }
 
@@ -1080,8 +1133,8 @@ footer {
         font-size: 25px;
         font-weight: 900;
 
-        position: relative;
-        bottom: 320px;
+        /*        position: relative;*/
+        /*        bottom: 320px;*/
         /* top: 4790px; */
         /* right: 308px; */
         /* color: white; */
@@ -1092,9 +1145,11 @@ footer {
         font-size: 20px;
         display: inline;
         margin-top: 30px;
+        /*
         position: relative;
         bottom: 320px;
         left: 121px;
+*/
         /* text-align: center; */
         /* top: 4790px; */
         /* left: 245px; */
@@ -1104,11 +1159,13 @@ footer {
         font-size: 16px;
         display: block;
 
+        /*
         position: relative;
         bottom: 320px;
+*/
         /* left: 0px; */
         /* top: 4790px; */
-        right: 9px;
+        /*        right: 9px;*/
         /* left: 200px; */
         /* margin-left: auto; */
         /* margin-right: auto; */
@@ -1129,9 +1186,11 @@ footer {
         /* margin-right: 4px; */
         font-style: italic;
         padding: 1px;
-        position: relative;
+        /*        position: relative;*/
+        /*
         bottom: 320px;
         left: 82px;
+*/
         /* top: 4790px; */
         /* left: 203px; */
     }
@@ -1146,9 +1205,11 @@ footer {
         font-family: fantasy;
         font-weight: 900;
         font-size: large;
+        /*
         position: relative;
         bottom: 320px;
         left: 68px;
+*/
         /* top: 4790px; */
         /* left: 170px; */
     }
@@ -1213,7 +1274,7 @@ footer {
         font-size: 13px;
         font-family: fantasy;
         font-weight: bold;
-        position: relative;
+        /*        position: relative;*/
         /* left: 264px; */
         /* bottom: 60px; */
         margin-left: auto;
@@ -1222,9 +1283,11 @@ footer {
 
     .nav_words {
         color: white;
+        /*
         position: relative;
         top: 270px;
         right: 240px;
+*/
         text-decoration: none;
     }
 
@@ -1252,7 +1315,7 @@ footer {
     }
 
     .slick-list {
-        position: relative;
+        /*        position: relative;*/
         display: block;
         overflow: scroll;
         margin: 0;
@@ -1351,8 +1414,7 @@ footer {
 
     .pic_label {
         display: inline;
-        position: relative;
-
+        /*        position: relative;*/
         font-size: 12px;
     }
 
@@ -1364,7 +1426,6 @@ footer {
 
     .url {
         text-decoration: none;
-
         color: white;
         text-align: center;
         margin-top: 21px;
@@ -1394,19 +1455,23 @@ footer {
         font-size: 20px;
         display: inline;
         margin-top: 30px;
+        /*
         position: relative;
         top: 4660px;
         left: 65px;
+*/
     }
 
     .search_filters_article {
         font-size: 17px;
         display: block;
 
+        /*
         position: relative;
         top: 4660px;
         right: 115px;
-        /* left: 200px; */
+         left: 200px;
+*/
         /* margin-left: auto; */
         /* margin-right: auto; */
         /* color: white; */
@@ -1425,19 +1490,25 @@ footer {
         font-family: fantasy;
         font-weight: 900;
         font-size: large;
+        /*
         position: relative;
         top: 4660px;
         left: 35px;
+        */
     }
+
 
     .search_article_other {
 
         font-size: 20px;
         font-weight: 900;
 
-        position: relative;
+
+        /*        position: relative;*/
+        /*
         top: 4660px;
         right: 115px;
+*/
     }
 
     .border {
@@ -1673,7 +1744,7 @@ footer {
         height: 370px;
         opacity: .85;
         border-radius: 20%;
-        position: absolute;
+        /*        position: absolute;*/
     }
     #left_column {
         width: 100%;
@@ -1741,7 +1812,7 @@ footer {
         display: block;
         padding: 0 20px;
         font-size: 20px;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid gray;
         margin-top: 5px;
         margin-bottom: 5px;
     }
