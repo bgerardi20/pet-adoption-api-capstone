@@ -17,9 +17,10 @@
         <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Pet Adoption Capstone</h1>
         <nav>
             <ul class="header_list">
+                <li class="nav_options"><a href="" class="nav_words">Home</a></li>
                 <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
-                <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
-                <li class="nav_options"><a href="" class="nav_words">Browse Helpful Articles</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Random Pet</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Articles and More</a></li>
             </ul>
         </nav>
 
@@ -33,9 +34,9 @@
 
         </section>
 
-        <section class="stats">
-            <h2 class="h2_checklist">Adoption Statistics from 2016</h2>
-            <ul class="list">
+        <section class="adopt_stats_container">
+            <h2 class="stats_title">Adoption Statistics from 2016</h2>
+            <ul class="stats_list">
                 <li class="adopt_stats">Approximately 4 million shelter animals are adopted each year.</li>
                 <li class="adopt_stats">Each year, approximately 1.5 million shelter animals are euthanized.</li>
                 <li class="adopt_stats">APPA survey shows that 37% of dogs are adopted from a shelter.</li>
@@ -44,11 +45,6 @@
             </ul>
         </section>
 
-        <section class="random_pet_results_container">
-
-
-
-        </section>
 
         <div class="slider slider-for">
             <div>
@@ -94,8 +90,9 @@
         <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Adoption Page</h1>
         <nav>
             <ul class="header_list">
+                <li class="nav_options"><a href="" class="nav_words">Home</a></li>
                 <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
-                <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Random Pet</a></li>
                 <li class="nav_options"><a href="" class="nav_words">Articles and More</a></li>
             </ul>
         </nav>
@@ -105,27 +102,27 @@
     <main class="adoption">
 
         <section class="adoption_container">
-            <!--make this a drop down -->
-            <div class="container">
 
-                <form class="search_form">
+            <div class="search_adoption_container">
 
-                    <h2 class="find">Search Adoptions By:</h2><br>
+                <form class="adoption_search_form">
 
-                    <label class="search_filters">Location</label>
-                    <input type="text" name="location" placeholder=" i.e 76021" value="76021" class="location">
+                    <h2 class="shelter_title">Search Adoptions By:</h2><br>
 
-                    <label class="search_filters">Animal</label>
+                    <label class="search_label_filter">Location</label>
+                    <input type="text" name="location" placeholder=" i.e 76021" value="76021" class="input_filter">
+
+                    <label class="search_label_filter">Animal</label>
                     <!-- drop down or input? -->
-                    <select name="animal" class="location" id="dynamic-droppdown-trigger">
+                    <select name="animal" class="input_filter" id="dynamic-droppdown-trigger">
                         <option value="" selected>Select</option>
-                        <option value="dog">dog</option>
-                        <option value="cat">cat</option>
+                        <option value="Dog">dog</option>
+                        <option value="Cat">cat</option>
                     </select><br>
 
                     <div class="animal_breed_container">
 
-                        <label class="search_filters">Breed</label>
+                        <label class="search_label_filter">Breed</label>
                         <!-- drop down or input? -->
                         <select name="breed" class="breed_select" id="dynamic-droppdown-populate"></select>
 
@@ -136,7 +133,6 @@
                         <label for="Sex">Sex:</label>
                         <select name="sex" class="sex_size">
                             <option value="" selected>Select</option>
-
                             <option value="F">Female</option>
                             <option value="M">Male</option>
                         </select>
@@ -144,7 +140,6 @@
                         <label for="Size">Size:</label>
                         <select name="size" class="sex_size">
                             <option value="" selected>Select</option>
-
                             <option value="S">Small</option>
                             <option value="M">Medium</option>
                             <option value="L">Large</option>
@@ -153,7 +148,7 @@
 
                     </div>
 
-                    <input type="submit" value="Find My Pet!" class="submit">
+                    <input type="submit" value="Find My Pet!" class="submit_button">
 
                 </form>
 
@@ -169,94 +164,30 @@
 
     </main>
 
-    <!--    <header class="header">
+    <header class="header">
 
-        <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Picture Page</h1>
+        <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Random Pet</h1>
         <nav>
             <ul class="header_list">
+                <li class="nav_options"><a href="" class="nav_words">Home</a></li>
                 <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
-                <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
+                <li class="nav_options"><a href="" class="nav_words">Random Pet</a></li>
                 <li class="nav_options"><a href="" class="nav_words">Articles and more</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <main class="cute_dogs">
+    <main class="random_dog_container">
 
-        <section class="picture_container">
-
-
-            <div class="container">
-
-                <img src="images/dog_border.gif" alt="paw_border" class="border" width="90%">
-
-                <form class="search_form">
-
-                    <h1 class="search">PICTURE SEARCH</h1>
-
-                    <h2 class="find">Search by:</h2><br>
+        <section class="random_pet_results_container">
 
 
-                    <label class="search_pics">By Breed</label>
-
-                    <input type="drop-down" name="animal" placeholder=" i.e boxer" class="location_pic"><br>
-
-                    <label class="search_pics">By Sub-breed</label>
-                    <input type="text" name="location" placeholder=" i.e afghan" class="location_pic"><br>
-
-                    <label class="pic_label">Show All Pics</label>
-
-                    <input type="radio" name="all" class="location_radio">
-
-                    <label class="pic_label">Show Random Pics</label>
-
-                    <input type="radio" name="random" class="location_radio"><br>
-
-                    <input type="submit" value="Find My Pet!" class="submit">
-
-                </form>
-
-            </div>
 
         </section>
 
-        <section class="results_container">
 
-            <div class="one_pic">
-
-                <h2 class="pic_h2">Breed: </h2>
-
-                <img src="images/night-animal-dog-pet.jpg" alt="dog_pic" id="show_one_pic" width="500px" height="250px">
-
-                <div class="button_div">
-                    <input type="submit" value="Next" class="submit_pic">
-                    <input type="submit" value="Reset" class="submit_pic">
-                </div>
-
-            </div>
-
-
-            <div class="all_pics">
-
-                <section>
-
-                    <h2 class="pic_h2">Breed: </h2>
-
-                    <img src="images/night-animal-dog-pet.jpg" alt="dog_pic" class="show_all_pic" width="500px" height="250px">
-
-                    <img src="images/night-animal-dog-pet.jpg" alt="dog_pic" class="show_all_pic" width="500px" height="250px">
-
-                </section>
-
-
-                <input type="submit" value="Reset" class="submit_pic">
-
-            </div>
-
-        </section>
-
-    </main> -->
+    </main>
 
     <main class="other">
 
@@ -264,8 +195,9 @@
             <h1 class="title"><img src="images/logo.png" alt="dog_logo" class="logo">Articles and More</h1>
             <nav>
                 <ul class="header_list">
+                    <li class="nav_options"><a href="" class="nav_words">Home</a></li>
                     <li class="nav_options"><a href="" class="nav_words">Adopt a Pet</a></li>
-                    <li class="nav_options"><a href="" class="nav_words">Show Me Cute Dogs</a></li>
+                    <li class="nav_options"><a href="" class="nav_words">Random Pet</a></li>
                     <li class="nav_options"><a href="" class="nav_words">Articles and More</a></li>
                 </ul>
             </nav>
@@ -273,22 +205,19 @@
 
         <section class="column_wrapper">
 
-            <div id="left">
+            <div id="left_column">
 
                 <form class="shelter_form">
 
                     <h3 class="shelter_title">Search Shelters By Zipcode</h3><br>
-                    <input type="text" name="location" placeholder="76021" class="location shelter_input"><br>
+                    <input type="text" name="location" placeholder="76021" id="shelter_input"><br>
                     <input type="submit" value="Find" class="submit_shelter">
 
                 </form>
 
-                <div id="bottom">
-                    <!-- <h2 class="h2_checklist"> -->
-                    <!-- <ul class="list"> -->
-                    <!-- <li class="essentials"> -->
-                    <h2 class="other_h2">Recommended Essentials</h2>
-                    <ul class="list">
+                <div id="bottom_column">
+                    <h2 class="shelter_title">Recommended Essentials</h2>
+                    <ul class="bottom_column_list">
                         <li class="essentials">Water/Food Bowl</li>
                         <li class="essentials">Collar/Leash</li>
                         <li class="essentials">A Few Toys</li>
@@ -306,25 +235,21 @@
 
             </div>
 
-            <div id="right">
-                <!-- <h1 class="articles_h1"> -->
-                <!-- <h2 class="article_h2"> -->
-                <!--  <ul class="article_list"> -->
-                <!-- <li class="url"> -->
-                <h1 class="right_h1">Helpful Articles</h1>
-                <ul class="right_ul">
-                    <li class="url"><a class="other_a" href="https://www.petfinder.com/pet-adoption/dog-adoption/before-dog-adoption/">Things to Consider Before You Adopt a Dog</a></li>
-                    <li class="url"><a class="other_a" href="https://www.petakids.com/save-animals/dog-adoption-guide/">16 Things to Think About Before Adopting a Dog</a></li>
-                    <li class="url"><a class="other_a" href="http://www.petmd.com/dog/care/evr_dg_before_getting_a_dog">How to Choose a Dog & What to Know Before Getting One</a></li>
-                    <li class="url"><a class="other_a" href="http://www.wagsandwalks.org/what-to-do-after-adopting-a-dog/">I Adopted a Dog, Now What?</a></li>
-                    <li class="url"><a class="other_a" href="https://www.whattoexpect.com/toddler/potty-training/">Potty Training 101</a></li>
-                    <li class="url"><a class="other_a" href="http://www.akc.org/content/health/articles/human-foods-dogs-can-and-cant-eat/">Human Foods Dogs Can and Can't Eat</a></li>
-                    <li class="url"><a class="other_a" href="https://healthypets.mercola.com/sites/healthypets/archive/2011/05/12/your-essential-survival-guide-to-adopting-a-new-dog.aspx">Dog Training-Turning Rescue Dogs to Behaved Dogs</a></li>
-                    <li class="url"><a class="other_a" href="https://www.huffingtonpost.com/entry/what-dog-breed-is-best-for-you_us_564e3ac1e4b0258edb30ad4b">Which Kind of Dog Should You Get?</a></li>
-                    <li class="url"><a class="other_a" href="https://www.petfinder.com/pet-adoption/dog-adoption/pet-adoption-checklist/">Checklist for New Adopters</a></li>
-                    <li class="url"><a class="other_a" href="https://www.petfinder.com/dogs/bringing-a-dog-home/changing-dog-name/">Changing the Name of Your New Dog</a></li>
-                    <li class="url"><a class="other_a" href="https://www.animalhumanesociety.org/dog-grooming-tips">Dog Grooming Tips</a></li>
-                    <li class="url"><a class="other_a" href="http://www.akc.org/content/health/articles/best-dog-food-choosing-whats-right-for-your-dog/">Best Dog Food: Choosing What's Right For Your Dog</a></li>
+            <div id="right_column">
+                <h1 class="shelter_title">Helpful Articles</h1>
+                <ul class="right_column_list">
+                    <li class="url"><a class="url_a" href="https://www.petfinder.com/pet-adoption/dog-adoption/before-dog-adoption/">Things to Consider Before You Adopt a Dog</a></li>
+                    <li class="url"><a class="url_a" href="https://www.petakids.com/save-animals/dog-adoption-guide/">16 Things to Think About Before Adopting a Dog</a></li>
+                    <li class="url"><a class="url_a" href="http://www.petmd.com/dog/care/evr_dg_before_getting_a_dog">How to Choose a Dog & What to Know Before Getting One</a></li>
+                    <li class="url"><a class="url_a" href="http://www.wagsandwalks.org/what-to-do-after-adopting-a-dog/">I Adopted a Dog, Now What?</a></li>
+                    <li class="url"><a class="url_a" href="https://www.whattoexpect.com/toddler/potty-training/">Potty Training 101</a></li>
+                    <li class="url"><a class="url_a" href="http://www.akc.org/content/health/articles/human-foods-dogs-can-and-cant-eat/">Human Foods Dogs Can and Can't Eat</a></li>
+                    <li class="url"><a class="url_a" href="https://healthypets.mercola.com/sites/healthypets/archive/2011/05/12/your-essential-survival-guide-to-adopting-a-new-dog.aspx">Dog Training-Turning Rescue Dogs to Behaved Dogs</a></li>
+                    <li class="url"><a class="url_a" href="https://www.huffingtonpost.com/entry/what-dog-breed-is-best-for-you_us_564e3ac1e4b0258edb30ad4b">Which Kind of Dog Should You Get?</a></li>
+                    <li class="url"><a class="url_a" href="https://www.petfinder.com/pet-adoption/dog-adoption/pet-adoption-checklist/">Checklist for New Adopters</a></li>
+                    <li class="url"><a class="url_a" href="https://www.petfinder.com/dogs/bringing-a-dog-home/changing-dog-name/">Changing the Name of Your New Dog</a></li>
+                    <li class="url"><a class="url_a" href="https://www.animalhumanesociety.org/dog-grooming-tips">Dog Grooming Tips</a></li>
+                    <li class="url"><a class="url_a" href="http://www.akc.org/content/health/articles/best-dog-food-choosing-whats-right-for-your-dog/">Best Dog Food: Choosing What's Right For Your Dog</a></li>
                 </ul>
 
             </div>
@@ -332,16 +257,6 @@
 
 
         </section>
-
-
-        <!--
-<section class="other_blah">
-
-
-
-</section>
--->
-
 
 
         <section class="shelter_results_container text-left">
@@ -353,9 +268,9 @@
 
 
     <footer>
-        <a href="linkedin.com" class="footer">LinkedIn</a>
-        <a href="linkedin.com" class="footer">Email</a>
-        <a href="linkedin.com" class="footer">Github</a>
+        <a href="linkedin.com" class="bottom_footer">LinkedIn</a>
+        <a href="linkedin.com" class="bottom_footer">Email</a>
+        <a href="linkedin.com" class="bottom_footer">Github</a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

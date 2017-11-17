@@ -8,6 +8,7 @@
 
 body {
     background-color: black;
+    font-family: serif;
 
 }
 
@@ -34,7 +35,7 @@ h1 {
 }
 
 select {
-    /*    width: 10%;*/
+    width: auto;
     height: 33px;
     background-color: antiquewhite;
     border: 1px solid black;
@@ -45,6 +46,20 @@ select {
     font-style: italic;
     padding: 1px;
 
+}
+
+label {
+    margin: 7px
+}
+
+
+option {
+    font-size: 16px;
+    display: inline;
+}
+
+footer {
+    text-align: center;
 }
 
 .nav_options {
@@ -64,21 +79,6 @@ select {
 .nav_words {
     color: white;
     text-decoration: none;
-}
-
-label {
-    margin: 7px
-}
-
-
-option {
-    font-size: 16px;
-    display: inline;
-    font-family: sans-serif;
-}
-
-footer {
-    text-align: center;
 }
 
 .header {
@@ -124,7 +124,7 @@ footer {
     border: 1px solid white;
 }
 
-.stats {
+.adopt_stats_container {
     background-color: slategray;
     display: inline-block;
     width: 90%;
@@ -183,7 +183,7 @@ footer {
     text-align: center;
 }
 
-.container {
+.search_adoption_container {
     width: 90%;
     background-color: slategray;
     margin-top: 80px;
@@ -196,20 +196,19 @@ footer {
     border-radius: 20%;
 }
 
-.search_form {
+.adoption_search_form {
     width: 100%;
     padding: 1rem;
 }
 
 .search {
-
     font-size: 20px;
     font-weight: 900;
-    font-family: fantasy;
+
 }
 
 .find {
-    font-family: fantasy;
+
     font-size: 35px;
 
     /* font-weight: 900; */
@@ -221,13 +220,12 @@ footer {
 
     font-size: 20px;
     font-weight: 900;
-    font-family: fantasy;
+
     position: relative;
     left: 25%;
 }
 
 .article_h2 {
-    font-family: cursive;
     font-size: 17px;
     display: inline;
     margin-top: 30px;
@@ -235,15 +233,14 @@ footer {
     left: 25%;
 }
 
-.search_filters {
+.search_label_filter {
     font-size: 18px;
     /* display: block; */
-    font-family: sans-serif;
     /*    width: 100px;*/
     display: inline-block;
 }
 
-.location {
+.input_filter {
     background-color: antiquewhite;
     height: 29px;
     border: 1px solid black;
@@ -254,23 +251,25 @@ footer {
     width: 15%;
 }
 
-.submit,
+.submit_button,
 .submit_shelter {
     width: 30%;
-    background-color: cadetblue;
+    background-color: #bfbfbf;
     /* line-height: 35px; */
     border-radius: 3px 3px;
+    border: 1px solid black;
     padding: 5px;
     margin-top: 14px;
     margin-bottom: 10px;
     font-family: fantasy;
     /* font-weight: 900; */
     font-size: 20px;
+    /* color: white; */
 }
 
 #submit {
     width: 20%;
-    background-color: cadetblue;
+    background-color: #bfbfbf;
     line-height: 25px;
     border-radius: 3px 3px;
     padding: 5px;
@@ -283,14 +282,14 @@ footer {
     left: 170px;
 }
 
-.footer {
+.bottom_footer {
     margin: 5px;
 }
 
 
 .essentials {
     text-align: center;
-    font-family: sans-serif;
+
     font-size: 20px;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -298,27 +297,22 @@ footer {
     color: white;
 }
 
-.adopt_stats {
+.adopt_adopt_stats_container {
     text-align: center;
     display: block;
     width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
     color: white;
-    font-family: serif;
+
 }
 
 .h2_checklist {
-    font-family: fantasy;
     font-size: 35px;
 
     /* font-weight: 900; */
     display: inline;
     padding-bottom: 20px;
-}
-
-.message {
-    font-family: sans-serif;
 }
 
 .location_pic {
@@ -333,7 +327,6 @@ footer {
 .search_pics {
     font-size: 16px;
     display: block;
-    font-family: sans-serif;
     margin-top: 15px;
     margin-bottom: 10px;
 }
@@ -365,17 +358,9 @@ footer {
 .pic_label {
     display: inline;
     position: relative;
-    font-family: sans-serif;
+
 }
 
-.right_h1 {
-    font-family: fantasy;
-    font-size: 35px;
-
-    /* font-weight: 900; */
-    display: inline;
-    padding-bottom: 20px;
-}
 
 .right_h2 {
     font-size: 20px;
@@ -386,14 +371,13 @@ footer {
     border-color: white;
 }
 
-.other_a {
+. {
     color: white;
     text-decoration: none;
 }
 
 .url {
     text-decoration: none;
-    font-family: sans-serif;
     color: white;
     text-align: center;
     margin-top: 35px;
@@ -409,7 +393,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     /* text-align: center; */
-    font-family: sans-serif;
+    : sans-serif;
     font-size: 18px;
 }
 
@@ -417,7 +401,7 @@ footer {
 
     font-size: 17px;
     font-weight: 900;
-    font-family: fantasy;
+
     position: relative;
     right: 44%;
 }
@@ -426,14 +410,14 @@ footer {
 
     font-size: 25px;
     font-weight: 900;
-    font-family: fantasy;
+
     position: relative;
     top: 4790px;
     right: 308px;
 }
 
 .find_article {
-    font-family: cursive;
+
     font-size: 16px;
     display: inline;
     margin-top: 30px;
@@ -442,7 +426,7 @@ footer {
 }
 
 .find_article_other {
-    font-family: cursive;
+
     font-size: 20px;
     display: inline;
     margin-top: 30px;
@@ -502,16 +486,16 @@ footer {
     border: 1px solid black;
 }
 
-#left {
-    width: 45%;
+#left_column {
+    width: 49%;
     display: inline-block;
     padding-left: 2.5%;
     padding-right: 2.5%;
     /* background-color: slategray; */
 }
 
-#right {
-    width: 45%;
+#right_column {
+    width: 49%;
     /* height: auto; */
     /* background-color: white; */
     display: inline-block;
@@ -554,15 +538,8 @@ footer {
     position: absolute;
 }
 
-.other_h2 {
-    font-family: fantasy;
-    font-size: 35px;
-    /* font-weight: 900; */
-    display: inline;
-    padding-bottom: 20px;
-}
 
-#bottom {
+#bottom_column {
     width: 100%;
     height: 568px;
     background-color: slategray;
@@ -634,9 +611,10 @@ footer {
 
 .petfinder_button {
     width: 30%;
-    background-color: cadetblue;
+    background-color: #bfbfbf;
     line-height: 35px;
     border-radius: 3px 3px;
+    border: 1px solid black;
     padding: 5px;
     margin-bottom: 20px;
     font-family: fantasy;
@@ -644,6 +622,7 @@ footer {
     font-size: large;
     text-align: center;
     display: inline-block;
+    color: black;
 }
 
 .pic_h2 {
@@ -715,12 +694,12 @@ footer {
     color: black;
 }
 
-.shelter_title {
-    font-family: fantasy;
+.stats_title {
     font-size: 35px;
     /* font-weight: 900; */
     display: inline;
     padding-bottom: 20px;
+    font-family: fantasy;
 }
 
 .adoption_results {
@@ -729,6 +708,20 @@ footer {
 
 .shelter_results {
     padding: 1rem;
+}
+
+#shelter_input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 40%;
+    background-color: antiquewhite;
+    height: 29px;
+    border: 1px solid black;
+    border-radius: 3px 3px;
+    font-style: italic;
+    font-size: 18px;
+    padding: 1px;
 }
 
 
@@ -740,19 +733,16 @@ footer {
 
 /* psuedo */
 
-input:hover {
-    background-color: cadetblue;
+.submit_button:hover,
+#submit:hover,
+.petfinder_button:hover,
+.submit_shelter:hover {
+    border: 1px solid;
+    border-color: white;
     color: white;
 }
 
-.submit:hover,
-#submit:hover {
-    border: 2px solid;
-    border-color: aliceblue;
-    box-shadow: 0 0 10px #9ecaed;
-}
-
-.other_a:hover {
+.url_a:hover {
     color: black;
     text-decoration: underline;
 }
@@ -780,6 +770,10 @@ input:hover {
         bottom: 250px;
     }
 
+    .shelter_form {
+        height: 250px;
+    }
+
     .for {
         width: 90%;
         height: 600px;
@@ -795,7 +789,7 @@ input:hover {
         border: 1px solid white;
     }
 
-    .container {
+    .search_adoption_container {
         width: 90%;
         background-color: slategray;
         margin-top: 60px;
@@ -804,7 +798,7 @@ input:hover {
     }
 
     select {
-        width: 10%;
+        width: auto;
         height: 33px;
         background-color: antiquewhite;
         border: 1px solid black;
@@ -818,7 +812,7 @@ input:hover {
 
     .essentials {
         text-align: center;
-        font-family: sans-serif;
+
         font-size: 20px;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
@@ -830,7 +824,7 @@ input:hover {
 
         font-size: 25px;
         font-weight: 900;
-        font-family: fantasy;
+
         position: relative;
         /* top: 4790px; */
         bottom: 319px;
@@ -839,7 +833,7 @@ input:hover {
     }
 
     .find_article_other {
-        font-family: cursive;
+
         font-size: 20px;
         display: inline;
         margin-top: 30px;
@@ -851,7 +845,7 @@ input:hover {
     .search_filters_article {
         font-size: 17px;
         display: block;
-        font-family: sans-serif;
+
         position: relative;
         /* top: 4790px; */
         bottom: 310px;
@@ -883,7 +877,7 @@ input:hover {
 
     #submit {
         width: 250px;
-        background-color: cadetblue;
+        background-color: #bfbfbf;
         line-height: 25px;
         border-radius: 3px 3px;
         padding: 5px;
@@ -908,15 +902,15 @@ input:hover {
         text-align: center;
     }
 
-    .submit {
+    .submit_button {
         width: 30%;
-        background-color: cadetblue;
+        background-color: #bfbfbf;
         /* line-height: 35px; */
         border-radius: 3px 3px;
         padding: 5px;
         margin-top: 14px;
         margin-bottom: 10px;
-        font-family: fantasy;
+
         /* font-weight: 900; */
         font-size: 20px;
     }
@@ -933,13 +927,25 @@ input:hover {
         /* text-align: center; */
         /* */
         font-size: 10px;
-        font-family: fantasy;
+
         font-weight: bold;
         /* position: relative; */
         left: 242px;
         /* bottom: 60px; */
         /* margin-left: auto; */
         /* margin-right: auto; */
+    }
+
+    .shelter_form {
+        /* position: relative; */
+        /* text-align: center; */
+        margin-top: 20px;
+        margin-bottom: 60px;
+        /* font-size: 20px; */
+        /* background-color: white; */
+        border-bottom: 1px solid white;
+        width: 100%;
+        height: 250px;
     }
 
     .for {
@@ -957,7 +963,7 @@ input:hover {
         border: 1px solid white;
     }
 
-    .container {
+    .search_adoption_container {
         width: 90%;
         background-color: slategray;
         margin-top: 60px;
@@ -965,10 +971,9 @@ input:hover {
         border: 1px solid white;
     }
 
-    .search_filters {
+    .search_label_filter {
         font-size: 18px;
         /* display: block; */
-        font-family: sans-serif;
         /* width: 100px; */
         display: inline-block;
     }
@@ -976,7 +981,6 @@ input:hover {
     .breed_select {
         font-size: 18px;
         /* display: block; */
-        font-family: sans-serif;
         width: auto;
         display: inline-block;
     }
@@ -985,7 +989,7 @@ input:hover {
         margin: 0px;
     }
 
-    .location {
+    .input_filter {
         background-color: antiquewhite;
         height: 29px;
         border: 1px solid black;
@@ -997,7 +1001,7 @@ input:hover {
     }
 
     select {
-        width: 10%;
+        width: auto;
         height: 33px;
         background-color: antiquewhite;
         border: 1px solid black;
@@ -1009,9 +1013,9 @@ input:hover {
         padding: 1px;
     }
 
-    .submit {
+    .submit_button {
         width: 30%;
-        background-color: cadetblue;
+        background-color: #bfbfbf;
         /* line-height: 35px; */
         border-radius: 3px 3px;
         padding: 5px;
@@ -1025,7 +1029,6 @@ input:hover {
     .search_pics {
         font-size: 15px;
         /* display: block; */
-        font-family: sans-serif;
         /* margin-top: 15px; */
         /* margin-bottom: 10px; */
     }
@@ -1049,13 +1052,13 @@ input:hover {
     .pic_label {
         display: inline;
         position: relative;
-        font-family: sans-serif;
+
         font-size: 15px;
     }
 
     .essentials {
         text-align: center;
-        font-family: sans-serif;
+
         font-size: 20px;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
@@ -1065,10 +1068,9 @@ input:hover {
 
     .url {
         text-decoration: none;
-        font-family: sans-serif;
         color: white;
         text-align: center;
-        margin-top: 29px;
+        margin-top: 33px;
         /* margin-bottom: 10px; */
         padding-top: 10px;
     }
@@ -1077,7 +1079,7 @@ input:hover {
 
         font-size: 25px;
         font-weight: 900;
-        font-family: fantasy;
+
         position: relative;
         bottom: 320px;
         /* top: 4790px; */
@@ -1086,7 +1088,7 @@ input:hover {
     }
 
     .find_article_other {
-        font-family: cursive;
+
         font-size: 20px;
         display: inline;
         margin-top: 30px;
@@ -1101,7 +1103,7 @@ input:hover {
     .search_filters_article {
         font-size: 16px;
         display: block;
-        font-family: sans-serif;
+
         position: relative;
         bottom: 320px;
         /* left: 0px; */
@@ -1136,7 +1138,7 @@ input:hover {
 
     #submit {
         width: 200px;
-        background-color: cadetblue;
+        background-color: #bfbfbf;
         line-height: 25px;
         border-radius: 3px 3px;
         padding: 5px;
@@ -1159,22 +1161,13 @@ input:hover {
     }
 
     .petfinder_button {
-        width: 30%;
-        background-color: cadetblue;
-        line-height: 35px;
-        border-radius: 3px 3px;
-        padding: 5px;
-        margin-bottom: 20px;
-        font-family: fantasy;
-        font-weight: 900;
-        font-size: 15px;
-        text-align: center;
+        width: auto;
     }
 
     .submit_shelter {
-        width: auto;
-        background-color: cadetblue;
-        line-height: 35px;
+        /* width: 20%; */
+        background-color: #bfbfbf;
+        /* line-height: 35px; */
         border-radius: 3px 3px;
         padding: 5px;
         margin-top: 14px;
@@ -1184,10 +1177,10 @@ input:hover {
     }
 
     .shelter_ul li {
-        display: inline;
+        display: block;
         padding: 0 20px;
         font-size: 14px;
-        border-right: 1px solid red;
+        border-right: 0;
         /* width: auto; */
     }
 }
@@ -1204,6 +1197,12 @@ input:hover {
         color: white;
         text-shadow: black 2px 2px;
     }
+
+    .random_pet_results_container,
+    .column_wrapper {
+        margin-top: 47px;
+    }
+
 
     .nav_options {
         display: block;
@@ -1229,7 +1228,7 @@ input:hover {
         text-decoration: none;
     }
 
-    .stats {
+    .adopt_stats_container {
         background-color: slategray;
         display: inline-block;
         width: 90%;
@@ -1260,25 +1259,25 @@ input:hover {
         /* padding: 0; */
     }
 
-    .container {
+    .search_adoption_container {
         width: 90%;
         background-color: slategray;
-        margin-top: 60px;
+        margin-top: 47px;
         display: inline-block;
         border: 1px solid white;
     }
 
-    .search_form {
+    .adoption_search_form {
         width: 100%;
         padding: 1rem;
     }
 
-    .shelter_title {
-        font-family: fantasy;
-        font-size: 35px;
+    .stats_title {
+        font-size: 28px;
         /* font-weight: 900; */
         display: inline;
         padding-bottom: 20px;
+        font-family: fantasy;
     }
 
     .shelter_label {
@@ -1287,14 +1286,11 @@ input:hover {
         text-align: center;
     }
 
-    .shelter_input {
+    #shelter_input {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
-        width: 60%;
-    }
-
-    .location {
+        width: 80%;
         background-color: antiquewhite;
         height: 29px;
         border: 1px solid black;
@@ -1302,13 +1298,15 @@ input:hover {
         font-style: italic;
         font-size: 18px;
         padding: 1px;
-        width: 15%;
     }
 
-    .search_filters {
+    .input_filter {
+        width: 30%;
+    }
+
+    .search_label_filter {
         font-size: 18px;
         /* display: block; */
-        font-family: sans-serif;
         /*        width: 100px;*/
         display: inline-block;
     }
@@ -1316,28 +1314,19 @@ input:hover {
     .search_pics {
         font-size: 13px;
         display: inline;
-        font-family: sans-serif;
+
     }
 
     label {
         margin: 0px;
     }
 
-    .submit {
-        width: 30%;
-        background-color: cadetblue;
-        /* line-height: 35px; */
-        border-radius: 3px 3px;
-        padding: 5px;
-        margin-top: 14px;
-        margin-bottom: 10px;
-        font-family: fantasy;
-        /* font-weight: 900; */
-        font-size: 20px;
+    .submit_button {
+        width: auto;
     }
 
     select {
-        width: 10%;
+        width: auto;
         height: 33px;
         background-color: antiquewhite;
         border: 1px solid black;
@@ -1363,7 +1352,7 @@ input:hover {
     .pic_label {
         display: inline;
         position: relative;
-        font-family: sans-serif;
+
         font-size: 12px;
     }
 
@@ -1375,7 +1364,7 @@ input:hover {
 
     .url {
         text-decoration: none;
-        font-family: sans-serif;
+
         color: white;
         text-align: center;
         margin-top: 21px;
@@ -1384,24 +1373,24 @@ input:hover {
         padding-top: 10px;
     }
 
-    .other_a {
+    .url_a {
         color: white;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .essentials {
         text-align: center;
-        font-family: sans-serif;
+
         font-size: 20px;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
-        margin: 3%;
+        margin: 6.5%;
         color: white;
     }
 
     .find_article_other {
-        font-family: cursive;
+
         font-size: 20px;
         display: inline;
         margin-top: 30px;
@@ -1413,7 +1402,7 @@ input:hover {
     .search_filters_article {
         font-size: 17px;
         display: block;
-        font-family: sans-serif;
+
         position: relative;
         top: 4660px;
         right: 115px;
@@ -1428,7 +1417,7 @@ input:hover {
 
     #submit {
         width: 33%;
-        background-color: cadetblue;
+        background-color: #bfbfbf;
         line-height: 20px;
         border-radius: 3px 3px;
         padding: 5px;
@@ -1445,7 +1434,7 @@ input:hover {
 
         font-size: 20px;
         font-weight: 900;
-        font-family: fantasy;
+
         position: relative;
         top: 4660px;
         right: 115px;
@@ -1463,16 +1452,7 @@ input:hover {
     }
 
     .petfinder_button {
-        width: 38%;
-        background-color: cadetblue;
-        line-height: 35px;
-        border-radius: 3px 3px;
-        padding: 5px;
-        margin-bottom: 20px;
-        font-family: fantasy;
-        font-weight: 900;
-        font-size: 73%;
-        text-align: center;
+        width: auto;
     }
 
     .show_all_pic {
@@ -1482,16 +1462,14 @@ input:hover {
         border: 1px solid white;
     }
 
-    #bottom {
+    #bottom_column {
         width: 100%;
         height: 568px;
         background-color: slategray;
-        border: 1px solid white;
-        /* vertical-align: bottom; */
     }
 
-    #right {
-        width: 45%;
+    #right_column {
+        width: 49%;
         /* height: auto; */
         /* background-color: white; */
         display: inline-block;
@@ -1528,7 +1506,11 @@ input:hover {
         /* background-color: white; */
         border-bottom: 1px solid white;
         width: 100%;
-        height: 200px;
+        height: 300px;
+    }
+
+    .breed_select {
+        width: 83%;
     }
 
 }
@@ -1545,6 +1527,10 @@ input:hover {
         margin-right: auto;
     }
 
+    .adopt_adopt_stats_container {
+        padding: 3%;
+    }
+
     .nav {
         width: 100%;
         height: 125px;
@@ -1555,7 +1541,6 @@ input:hover {
 
         font-size: 14px;
         /* font-weight: 500; */
-        font-family: fantasy;
     }
 
     .adopt_li {
@@ -1567,36 +1552,41 @@ input:hover {
     }
 
     .petfinder_button {
-        width: 38%;
-        background-color: cadetblue;
+        width: auto;
+        background-color: #bfbfbf;
         line-height: 35px;
         border-radius: 3px 3px;
+        border: 1px solid black;
         padding: 5px;
         margin-bottom: 20px;
-        font-family: fantasy;
+
         font-weight: 900;
-        font-size: 73%;
+        font-size: large;
         text-align: center;
-        display: inline;
+        display: inline-block;
+        color: black;
+    }
+
+    .breed_select {
+        width: 75%;
     }
 
     .find {
-        font-family: fantasy;
+
         font-size: 35px;
         /* font-weight: 900; */
         display: inline;
         padding-bottom: 20px;
     }
 
-    .search_filters {
-        font-size: 18px;
+    .search_label_filter {
+        font-size: 15px;
         /* display: block; */
-        font-family: sans-serif;
-        /*        width: 100px;*/
-        display: inline-block;
+        /* width: 100px; */
+        display: block;
     }
 
-    .location {
+    .input_filter {
         background-color: antiquewhite;
         height: 29px;
         border: 1px solid black;
@@ -1604,11 +1594,11 @@ input:hover {
         font-style: italic;
         font-size: 18px;
         padding: 1px;
-        width: 15%;
+        width: 40%;
     }
 
     select {
-        width: 10%;
+        width: auto;
         height: 33px;
         background-color: antiquewhite;
         border: 1px solid black;
@@ -1620,27 +1610,18 @@ input:hover {
         padding: 1px;
     }
 
-    .location {
-        background-color: antiquewhite;
-        height: 29px;
-        border: 1px solid black;
-        border-radius: 3px 3px;
-        font-style: italic;
-        font-size: 18px;
-        padding: 1px;
-        width: 15%;
-    }
 
     label {
         margin: 0px;
-        font-size: 11px;
+        font-size: 15px;
         font-weight: bold;
+        display: block;
     }
 
-    .submit,
+    .submit_button,
     .submit_shelter {
-        width: 30%;
-        background-color: cadetblue;
+        width: auto;
+        background-color: #bfbfbf;
         /* line-height: 35px; */
         border-radius: 3px 3px;
         padding: 5px;
@@ -1653,7 +1634,7 @@ input:hover {
 
     .submit_shelter {
         width: auto;
-        background-color: cadetblue;
+        background-color: #bfbfbf;
         line-height: 20px;
         padding: 5px;
         margin-top: 0px;
@@ -1662,7 +1643,7 @@ input:hover {
     }
 
 
-    .container {
+    .search_adoption_container {
         width: 90%;
         background-color: slategray;
         margin-top: 60px;
@@ -1694,8 +1675,7 @@ input:hover {
         border-radius: 20%;
         position: absolute;
     }
-
-    #left {
+    #left_column {
         width: 100%;
         height: 10%;
         margin-left: auto;
@@ -1703,31 +1683,40 @@ input:hover {
         display: block;
         padding-left: 2.5%;
         padding-right: 2.5%;
+        border-bottom: 1px solid white;
     }
 
-    .shelter_title {
-        font-family: fantasy;
-        font-size: 35px;
+    .stats_title {
+        font-size: 28px;
         /* font-weight: 900; */
         display: inline;
         padding-bottom: 20px;
+        font-family: fantasy;
     }
 
-    .shelter_input {
+    #shelter_input {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
+        width: 60%;
+        background-color: antiquewhite;
+        height: 29px;
+        border: 1px solid black;
+        border-radius: 3px 3px;
+        font-style: italic;
+        font-size: 18px;
+        padding: 1px;
     }
 
-    #right {
-        width: 45%;
+    #right_column {
+        width: 49%;
         /* height: auto; */
         /* background-color: white; */
         display: inline-block;
         vertical-align: top;
         margin-top: 20px;
         /* background-color: slategray; */
-        border-left: 1px solid white;
+        border-left: 0;
         padding-left: 2.5%;
         padding-right: 3.5%;
         padding-bottom: 1%;
@@ -1739,12 +1728,13 @@ input:hover {
         display: inline;
     }
 
-    #bottom {
+    #bottom_column {
         width: 100%;
         height: 568px;
         background-color: slategray;
-        border: 1px solid white;
-        /* vertical-align: bottom; */
+        margin-bottom: 60px;
+        /* ber: 1px 0
+    /* vertical-align: bottom; */
     }
 
     .shelter_ul li {
