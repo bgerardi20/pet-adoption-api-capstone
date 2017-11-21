@@ -16,14 +16,7 @@ ul {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: fantasy;
-}
+
 
 a {
     text-decoration: none;
@@ -46,8 +39,8 @@ h1 {
 select {
     width: auto;
     height: 33px;
-    background-color: antiquewhite;
-    border: 1px solid black;
+    background-color: lightgrey;
+    border: 1px solid white;
     border-radius: 3px 3px;
     margin-top: 20px;
     margin-left: 5px;
@@ -88,16 +81,9 @@ footer a:hover {
     display: inline;
     width: 30%;
     margin: 4px;
-    /* text-align: center; */
-    /*text-decoration: underline;*/
     font-size: small;
     font-family: fantasy;
     font-weight: bold;
-    /*
-    position: relative;
-    left: 460px;
-    bottom: 250px;
-*/
 }
 
 .nav_words {
@@ -235,47 +221,42 @@ footer a:hover {
 }
 
 .find {
-
     font-size: 35px;
-
-    /* font-weight: 900; */
     display: inline;
     padding-bottom: 20px;
 }
 
 .articles_h1 {
-
     font-size: 20px;
     font-weight: 900;
-
-    /*    position: relative;*/
-    /*    left: 25%;*/
 }
 
 .article_h2 {
     font-size: 17px;
     display: inline;
     margin-top: 30px;
-    /*    position: relative;*/
-    /*    left: 25%;*/
 }
 
 .search_label_filter {
     font-size: 18px;
-    /* display: block; */
-    /*    width: 100px;*/
     display: inline-block;
 }
 
 .input_filter {
-    background-color: antiquewhite;
+    background-color: lightgrey;
     height: 29px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 3px 3px;
     font-style: italic;
     font-size: 18px;
     padding: 1px;
     width: 15%;
+}
+
+.adopt_stats {
+    color: white;
+    font-size: 18px;
+    padding: 0.5rem;
 }
 
 .submit_button,
@@ -304,11 +285,6 @@ footer a:hover {
     font-family: fantasy;
     font-weight: 900;
     font-size: large;
-    /*
-    position: relative;
-    top: 4790px;
-    left: 170px;
-*/
 }
 
 .bottom_footer {
@@ -318,11 +294,10 @@ footer a:hover {
 
 .essentials {
     text-align: center;
-
-    font-size: 20px;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    margin: 3%;
+    font-size: 18px;
+    padding: 0.68rem;
+    /* padding-bottom: 1.5%; */
+    margin: 1.5rem;
     color: white;
 }
 
@@ -386,7 +361,6 @@ footer a:hover {
 
 .pic_label {
     display: inline;
-    /*    position: relative;*/
 }
 
 
@@ -410,7 +384,7 @@ footer a:hover {
     text-align: center;
     margin-top: 35px;
     /* margin-bottom: 10px; */
-    padding-top: 10px;
+    padding: .75rem;
 }
 
 .animal_breed_container {
@@ -426,58 +400,30 @@ footer a:hover {
 }
 
 .search_article {
-
     font-size: 17px;
     font-weight: 900;
-
-    /*
-    position: relative;
-    right: 44%;
-*/
 }
 
 .search_article_other {
-
     font-size: 25px;
     font-weight: 900;
-
-    /*
-    position: relative;
-    top: 4790px;
-    right: 308px;
-*/
 }
 
 .find_article {
-
     font-size: 16px;
     display: inline;
     margin-top: 30px;
-    /*
-    position: relative;
-    right: 44%;
-*/
 }
 
 .find_article_other {
-
     font-size: 20px;
     display: inline;
     margin-top: 30px;
-    /*
-    position: relative;
-    top: 4790px;
-    left: 245px;
-*/
 }
 
 .border_article {
     opacity: .85;
     border-radius: 20%;
-    /*
-    position: relative;
-    right: 44%;
-*/
 }
 
 .location_article {
@@ -485,16 +431,8 @@ footer a:hover {
     line-height: 20px;
     border: 1px solid white;
     border-radius: 3px 3px;
-    /* margin-bottom: 50px; */
-    /* margin-top: 20px; */
-    /* margin-left: 5px; */
-    /* margin-right: 4px; */
     font-style: italic;
     padding: 1px;
-    /*    position: relative;*/
-    /* right: 44%; */
-    /*    top: 4790px;*/
-    /*    left: 203px;*/
 }
 
 .shelter_container {
@@ -515,10 +453,6 @@ footer a:hover {
     margin: 4%;
     border: 1px solid white;
     border-radius: 5%;
-    /*
-    position: relative;
-    right: 10%;
-*/
 }
 
 .other {
@@ -559,32 +493,17 @@ footer a:hover {
 
 
 .shelter_form {
-    /* position: relative; */
-    /* text-align: center; */
     margin-top: 20px;
     margin-bottom: 60px;
-    /* font-size: 20px; */
-    /* background-color: white; */
     border-bottom: 1px solid white;
     width: 100%;
     height: 200px;
 }
 
-.other_border {
-    width: 45%;
-    height: 370px;
-    opacity: .85;
-    border-radius: 20%;
-    position: absolute;
-}
-
-
 #bottom_column {
     width: 100%;
     height: 568px;
     background-color: slategray;
-    /*    border: 1px solid white;*/
-    /* vertical-align: bottom; */
 }
 
 .dog_name {
@@ -717,9 +636,9 @@ footer a:hover {
 
 .shelter_ul li {
     display: inline;
-    padding: 0 20px;
+    padding: 2px 20px;
     font-size: 20px;
-    border-right: 1px solid gray;
+    border-right: 1px solid black;
 }
 
 .shelter_ul li:last-child {
@@ -755,9 +674,9 @@ footer a:hover {
     margin-bottom: 10px;
     text-align: center;
     width: 40%;
-    background-color: antiquewhite;
+    background-color: lightgrey;
     height: 29px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 3px 3px;
     font-style: italic;
     font-size: 18px;
@@ -804,16 +723,9 @@ footer a:hover {
         display: inline;
         width: 30%;
         margin: 4px;
-        /* text-align: center; */
-        /* */
         font-size: small;
         font-family: fantasy;
         font-weight: bold;
-        /*
-        position: relative;
-        left: 328px;
-        bottom: 250px;
-*/
     }
 
     .shelter_form {
@@ -846,8 +758,8 @@ footer a:hover {
     select {
         width: auto;
         height: 33px;
-        background-color: antiquewhite;
-        border: 1px solid black;
+        background-color: lightgrey;
+        border: 1px solid white;
         border-radius: 3px 3px;
         margin-top: 20px;
         margin-left: 5px;
@@ -858,51 +770,27 @@ footer a:hover {
 
     .essentials {
         text-align: center;
-
-        font-size: 20px;
-        padding-top: 1.5%;
-        padding-bottom: 1.5%;
-        margin: 3%;
+        font-size: 18px;
+        padding: 0.68rem;
+        /* padding-bottom: 1.5%; */
+        margin: 1.5rem;
         color: white;
     }
 
     .search_article_other {
-
         font-size: 25px;
         font-weight: 900;
-
-        /*        position: relative;*/
-        /* top: 4790px; */
-        /*        bottom: 319px;*/
-        /* color: white; */
-        /* right: 308px; */
     }
 
     .find_article_other {
-
         font-size: 20px;
         display: inline;
         margin-top: 30px;
-        /*
-        position: relative;
-        bottom: 315px;
-        left: 175px;
-*/
     }
 
     .search_filters_article {
         font-size: 17px;
         display: block;
-
-        /*        position: relative;*/
-        /* top: 4790px; */
-        /*
-        bottom: 310px;
-        right: 7px;
-*/
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* color: white; */
         text-align: center;
         margin-top: 7px;
         margin-bottom: 8px;
@@ -913,18 +801,8 @@ footer a:hover {
         line-height: 20px;
         border: 1px solid white;
         border-radius: 3px 3px;
-        /* margin-bottom: 50px; */
-        /* margin-top: 20px; */
-        /* margin-left: 5px; */
-        /* margin-right: 4px; */
         font-style: italic;
         padding: 1px;
-        /*
-        position: relative;
-        bottom: 310px;
-        left: 140px;
-*/
-        /* left: 203px; */
     }
 
     #submit {
@@ -937,11 +815,6 @@ footer a:hover {
         font-family: fantasy;
         font-weight: 900;
         font-size: large;
-        /*
-        position: relative;
-        bottom: 310px;
-        left: 101px;
-*/
     }
 
     .shelter_results_container {
@@ -968,6 +841,13 @@ footer a:hover {
         /* font-weight: 900; */
         font-size: 20px;
     }
+
+    .shelter_ul li {
+        display: block;
+        padding: 2px 20px;
+        font-size: 20px;
+        border-right: 0;
+    }
 }
 
 /*ipad potrait*/
@@ -975,28 +855,15 @@ footer a:hover {
 @media only screen and (max-width: 768px) {
 
     .nav_options {
-        /* display: block; */
         width: 30%;
         margin: 4px;
-        /* text-align: center; */
-        /* */
         font-size: 10px;
-
         font-weight: bold;
-        /* position: relative; */
-        /*        left: 242px;*/
-        /* bottom: 60px; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
     }
 
     .shelter_form {
-        /* position: relative; */
-        /* text-align: center; */
         margin-top: 20px;
         margin-bottom: 60px;
-        /* font-size: 20px; */
-        /* background-color: white; */
         border-bottom: 1px solid white;
         width: 100%;
         height: 250px;
@@ -1044,9 +911,9 @@ footer a:hover {
     }
 
     .input_filter {
-        background-color: antiquewhite;
+        background-color: lightgrey;
         height: 29px;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 3px 3px;
         font-style: italic;
         font-size: 18px;
@@ -1057,8 +924,8 @@ footer a:hover {
     select {
         width: auto;
         height: 33px;
-        background-color: antiquewhite;
-        border: 1px solid black;
+        background-color: lightgrey;
+        border: 1px solid white;
         border-radius: 3px 3px;
         margin-top: 20px;
         margin-left: 5px;
@@ -1105,17 +972,15 @@ footer a:hover {
 
     .pic_label {
         display: inline;
-        /*        position: relative;*/
         font-size: 15px;
     }
 
     .essentials {
         text-align: center;
-
-        font-size: 20px;
-        padding-top: 1.5%;
-        padding-bottom: 1.5%;
-        margin: 3%;
+        font-size: 18px;
+        padding: 0.68rem;
+        /* padding-bottom: 1.5%; */
+        margin: 1.5rem;
         color: white;
     }
 
@@ -1123,53 +988,25 @@ footer a:hover {
         text-decoration: none;
         color: white;
         text-align: center;
-        margin-top: 33px;
+        margin-top: 35px;
         /* margin-bottom: 10px; */
-        padding-top: 10px;
+        padding: .75rem;
     }
 
     .search_article_other {
-
         font-size: 25px;
         font-weight: 900;
-
-        /*        position: relative;*/
-        /*        bottom: 320px;*/
-        /* top: 4790px; */
-        /* right: 308px; */
-        /* color: white; */
     }
 
     .find_article_other {
-
         font-size: 20px;
         display: inline;
         margin-top: 30px;
-        /*
-        position: relative;
-        bottom: 320px;
-        left: 121px;
-*/
-        /* text-align: center; */
-        /* top: 4790px; */
-        /* left: 245px; */
     }
 
     .search_filters_article {
         font-size: 16px;
         display: block;
-
-        /*
-        position: relative;
-        bottom: 320px;
-*/
-        /* left: 0px; */
-        /* top: 4790px; */
-        /*        right: 9px;*/
-        /* left: 200px; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* color: white; */
         text-align: center;
         margin-top: 7px;
         margin-bottom: 8px;
@@ -1180,19 +1017,8 @@ footer a:hover {
         line-height: 20px;
         border: 1px solid white;
         border-radius: 3px 3px;
-        /* margin-bottom: 50px; */
-        /* margin-top: 20px; */
-        /* margin-left: 5px; */
-        /* margin-right: 4px; */
         font-style: italic;
         padding: 1px;
-        /*        position: relative;*/
-        /*
-        bottom: 320px;
-        left: 82px;
-*/
-        /* top: 4790px; */
-        /* left: 203px; */
     }
 
     #submit {
@@ -1205,13 +1031,6 @@ footer a:hover {
         font-family: fantasy;
         font-weight: 900;
         font-size: large;
-        /*
-        position: relative;
-        bottom: 320px;
-        left: 68px;
-*/
-        /* top: 4790px; */
-        /* left: 170px; */
     }
 
     .small_dog_image {
@@ -1226,9 +1045,7 @@ footer a:hover {
     }
 
     .submit_shelter {
-        /* width: 20%; */
         background-color: #bfbfbf;
-        /* line-height: 35px; */
         border-radius: 3px 3px;
         padding: 5px;
         margin-top: 14px;
@@ -1239,10 +1056,13 @@ footer a:hover {
 
     .shelter_ul li {
         display: block;
-        padding: 0 20px;
+        padding: 2px 20px;
         font-size: 14px;
         border-right: 0;
-        /* width: auto; */
+    }
+
+    .adopt_stats {
+        font-size: 16px;
     }
 }
 
@@ -1269,25 +1089,14 @@ footer a:hover {
         display: block;
         width: 70px;
         margin: 9px;
-        /* text-align: center; */
-        /* */
-        font-size: 13px;
         font-family: fantasy;
         font-weight: bold;
-        /*        position: relative;*/
-        /* left: 264px; */
-        /* bottom: 60px; */
         margin-left: auto;
         margin-right: auto;
     }
 
     .nav_words {
         color: white;
-        /*
-        position: relative;
-        top: 270px;
-        right: 240px;
-*/
         text-decoration: none;
     }
 
@@ -1315,11 +1124,9 @@ footer a:hover {
     }
 
     .slick-list {
-        /*        position: relative;*/
         display: block;
         overflow: scroll;
         margin: 0;
-        /* padding: 0; */
     }
 
     .search_adoption_container {
@@ -1336,11 +1143,14 @@ footer a:hover {
     }
 
     .stats_title {
-        font-size: 28px;
-        /* font-weight: 900; */
+        font-size: 27px;
         display: inline;
         padding-bottom: 20px;
         font-family: fantasy;
+    }
+
+    .adopt_stats {
+        font-size: 13px;
     }
 
     .shelter_label {
@@ -1354,9 +1164,9 @@ footer a:hover {
         margin-bottom: 10px;
         text-align: center;
         width: 80%;
-        background-color: antiquewhite;
+        background-color: lightgrey;
         height: 29px;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 3px 3px;
         font-style: italic;
         font-size: 18px;
@@ -1368,10 +1178,9 @@ footer a:hover {
     }
 
     .search_label_filter {
-        font-size: 18px;
+        font-size: 17px;
         /* display: block; */
-        /*        width: 100px;*/
-        display: inline-block;
+        padding-bottom: 10px;
     }
 
     .search_pics {
@@ -1382,6 +1191,7 @@ footer a:hover {
 
     label {
         margin: 0px;
+        font-size: 17px;
     }
 
     .submit_button {
@@ -1391,8 +1201,8 @@ footer a:hover {
     select {
         width: auto;
         height: 33px;
-        background-color: antiquewhite;
-        border: 1px solid black;
+        background-color: lightgrey;
+        border: 1px solid white;
         border-radius: 3px 3px;
         margin-top: 20px;
         margin-left: 5px;
@@ -1414,7 +1224,6 @@ footer a:hover {
 
     .pic_label {
         display: inline;
-        /*        position: relative;*/
         font-size: 12px;
     }
 
@@ -1442,39 +1251,21 @@ footer a:hover {
 
     .essentials {
         text-align: center;
-
-        font-size: 20px;
-        padding-top: 1.5%;
-        padding-bottom: 1.5%;
-        margin: 6.5%;
+        font-size: 14px;
+        padding: 0.68rem;
+        margin: 1.5rem;
         color: white;
     }
 
     .find_article_other {
-
         font-size: 20px;
         display: inline;
         margin-top: 30px;
-        /*
-        position: relative;
-        top: 4660px;
-        left: 65px;
-*/
     }
 
     .search_filters_article {
         font-size: 17px;
         display: block;
-
-        /*
-        position: relative;
-        top: 4660px;
-        right: 115px;
-         left: 200px;
-*/
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* color: white; */
         text-align: center;
         margin-top: 7px;
         margin-bottom: 8px;
@@ -1490,25 +1281,12 @@ footer a:hover {
         font-family: fantasy;
         font-weight: 900;
         font-size: large;
-        /*
-        position: relative;
-        top: 4660px;
-        left: 35px;
-        */
     }
 
 
     .search_article_other {
-
         font-size: 20px;
         font-weight: 900;
-
-
-        /*        position: relative;*/
-        /*
-        top: 4660px;
-        right: 115px;
-*/
     }
 
     .border {
@@ -1541,12 +1319,9 @@ footer a:hover {
 
     #right_column {
         width: 49%;
-        /* height: auto; */
-        /* background-color: white; */
         display: inline-block;
         vertical-align: top;
         margin-top: 20px;
-        /* background-color: slategray; */
         border-left: 1px solid white;
         padding-left: 2.5%;
         padding-right: 3.5%;
@@ -1562,19 +1337,13 @@ footer a:hover {
 
     .shelter_ul li {
         display: block;
-        padding: 0 20px;
+        padding: 2px 20px;
         font-size: 14px;
-        /* border-bottom: 1px solid red; */
-        /* width: auto; */
     }
 
     .shelter_form {
-        /* position: relative; */
-        /* text-align: center; */
         margin-top: 20px;
         margin-bottom: 60px;
-        /* font-size: 20px; */
-        /* background-color: white; */
         border-bottom: 1px solid white;
         width: 100%;
         height: 300px;
@@ -1609,9 +1378,7 @@ footer a:hover {
     }
 
     .search {
-
         font-size: 14px;
-        /* font-weight: 500; */
     }
 
     .adopt_li {
@@ -1643,24 +1410,20 @@ footer a:hover {
     }
 
     .find {
-
         font-size: 35px;
-        /* font-weight: 900; */
         display: inline;
         padding-bottom: 20px;
     }
 
     .search_label_filter {
         font-size: 15px;
-        /* display: block; */
-        /* width: 100px; */
         display: block;
     }
 
     .input_filter {
-        background-color: antiquewhite;
+        background-color: lightgrey;
         height: 29px;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 3px 3px;
         font-style: italic;
         font-size: 18px;
@@ -1671,8 +1434,8 @@ footer a:hover {
     select {
         width: auto;
         height: 33px;
-        background-color: antiquewhite;
-        border: 1px solid black;
+        background-color: lightgrey;
+        border: 1px solid white;
         border-radius: 3px 3px;
         margin-top: 20px;
         margin-left: 5px;
@@ -1693,13 +1456,11 @@ footer a:hover {
     .submit_shelter {
         width: auto;
         background-color: #bfbfbf;
-        /* line-height: 35px; */
         border-radius: 3px 3px;
         padding: 5px;
         margin-top: 14px;
         margin-bottom: 10px;
         font-family: fantasy;
-        /* font-weight: 900; */
         font-size: 20px;
     }
 
@@ -1723,19 +1484,14 @@ footer a:hover {
     }
 
     .shelter_form {
-        /* position: relative; */
-        /* text-align: center; */
         margin-top: 20px;
         margin-bottom: 60px;
-        /* font-size: 20px; */
-        /* background-color: white; */
         border-bottom: 1px solid white;
         width: 100%;
         height: 200px;
     }
 
     .shelter_label {
-        /* margin: 12px; */
         font-size: 16px;
     }
 
@@ -1744,7 +1500,6 @@ footer a:hover {
         height: 370px;
         opacity: .85;
         border-radius: 20%;
-        /*        position: absolute;*/
     }
     #left_column {
         width: 100%;
@@ -1759,7 +1514,6 @@ footer a:hover {
 
     .stats_title {
         font-size: 28px;
-        /* font-weight: 900; */
         display: inline;
         padding-bottom: 20px;
         font-family: fantasy;
@@ -1770,9 +1524,9 @@ footer a:hover {
         margin-bottom: 10px;
         text-align: center;
         width: 60%;
-        background-color: antiquewhite;
+        background-color: lightgrey;
         height: 29px;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 3px 3px;
         font-style: italic;
         font-size: 18px;
@@ -1781,12 +1535,9 @@ footer a:hover {
 
     #right_column {
         width: 49%;
-        /* height: auto; */
-        /* background-color: white; */
         display: inline-block;
         vertical-align: top;
-        margin-top: 20px;
-        /* background-color: slategray; */
+        margin-top: 60px;
         border-left: 0;
         padding-left: 2.5%;
         padding-right: 3.5%;
@@ -1803,14 +1554,12 @@ footer a:hover {
         width: 100%;
         height: 568px;
         background-color: slategray;
-        margin-bottom: 60px;
-        /* ber: 1px 0
-    /* vertical-align: bottom; */
+        margin-bottom: 160px;
     }
 
     .shelter_ul li {
         display: block;
-        padding: 0 20px;
+        padding: 2px 20px;
         font-size: 20px;
         border-bottom: 1px solid gray;
         margin-top: 5px;
@@ -1835,7 +1584,7 @@ footer a:hover {
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 19px;
         margin-top: 2rem;
         font-family: fantasy;
         color: white;
@@ -1852,5 +1601,11 @@ footer a:hover {
         margin-bottom: 47px;
     }
 
+    .nav_words {
+        color: white;
+        text-decoration: none;
+        font-size: 8px;
+        margin-left: 6px;
+    }
 
 }
