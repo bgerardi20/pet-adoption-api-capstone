@@ -132,9 +132,11 @@ footer a:hover {
     margin-bottom: 47px;
 }
 
+/*
 .statement {
     border: 1px solid white;
 }
+*/
 
 .adopt_stats_container {
     background-color: slategray;
@@ -720,8 +722,8 @@ footer a:hover {
 
 @media only screen and (max-width: 1024px) {
     .nav_options {
-        display: inline;
-        width: 30%;
+        display: inline-block;
+        width: auto;
         margin: 4px;
         font-size: small;
         font-family: fantasy;
@@ -855,10 +857,13 @@ footer a:hover {
 @media only screen and (max-width: 768px) {
 
     .nav_options {
-        width: 30%;
+        width: auto;
         margin: 4px;
         font-size: 10px;
         font-weight: bold;
+    }
+    .nav_options a {
+        color: black;
     }
 
     .shelter_form {
@@ -1084,15 +1089,21 @@ footer a:hover {
         margin-top: 47px;
     }
 
+    .header_list {
+        float: none;
+    }
+
 
     .nav_options {
-        display: block;
-        width: 70px;
+        display: inline-block;
+        width: auto;
         margin: 9px;
         font-family: fantasy;
         font-weight: bold;
+        /*
         margin-left: auto;
         margin-right: auto;
+*/
     }
 
     .nav_words {
