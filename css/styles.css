@@ -302,7 +302,7 @@ footer a:hover {
     padding: 0.68rem;
     /* padding-bottom: 1.5%; */
     margin: 1.5rem;
-    color: white;
+    color: darkgrey;
 }
 
 .adopt_adopt_stats_container {
@@ -591,7 +591,7 @@ sex_size {
     background-color: #bfbfbf;
     line-height: 35px;
     border-radius: 3px 3px;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 5px;
     margin-bottom: 20px;
     font-family: fantasy;
@@ -599,7 +599,7 @@ sex_size {
     font-size: large;
     text-align: center;
     display: inline-block;
-    color: black;
+    color: white;
 }
 
 .pic_h2 {
@@ -717,16 +717,16 @@ sex_size {
 .petfinder_button:hover,
 .submit_shelter:hover {
     border: 1px solid;
-    border-color: white;
-    color: white;
+    border-color: black;
+    color: black;
 }
 
 .url_a {
-    color: white;
+    color: darkgrey;
 }
 
 .url_a:hover {
-    color: darkgrey;
+    color: white;
     text-decoration: underline;
 }
 
@@ -794,7 +794,7 @@ sex_size {
         padding: 0.68rem;
         /* padding-bottom: 1.5%; */
         margin: 1.5rem;
-        color: white;
+        color: darkgrey;
     }
 
     .search_article_other {
@@ -1005,7 +1005,7 @@ sex_size {
         padding: 0.68rem;
         /* padding-bottom: 1.5%; */
         margin: 1.5rem;
-        color: white;
+        color: darkgrey;
     }
 
     .url {
@@ -1279,7 +1279,7 @@ sex_size {
     }
 
     .url_a {
-        color: white;
+        color: darkgrey;
         text-decoration: none;
         font-size: 16px;
     }
@@ -1289,7 +1289,7 @@ sex_size {
         font-size: 14px;
         padding: 0.68rem;
         margin: 1.5rem;
-        color: white;
+        color: darkgrey;
     }
 
     .find_article_other {
