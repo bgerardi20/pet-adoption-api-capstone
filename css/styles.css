@@ -51,7 +51,8 @@ select {
 }
 
 label {
-    margin: 7px
+    margin: 7px;
+    color: white;
 }
 
 
@@ -139,12 +140,12 @@ footer a:hover {
 */
 
 .adopt_stats_container {
-    background-color: slategray;
+    /*    background-color: slategray;*/
     display: inline-block;
     width: 90%;
     vertical-align: top;
     margin: 4%;
-    border: 1px solid white;
+    /*    border: 1px solid white;*/
     padding: 1rem;
 }
 
@@ -200,10 +201,10 @@ footer a:hover {
 
 .search_adoption_container {
     width: 90%;
-    background-color: slategray;
+    /*    background-color: slategray;*/
     margin-top: 80px;
     display: inline-block;
-    border: 1px solid white;
+    /*    border: 1px solid white;*/
 }
 
 .border {
@@ -242,6 +243,7 @@ footer a:hover {
 .search_label_filter {
     font-size: 18px;
     display: inline-block;
+    color: white;
 }
 
 .input_filter {
@@ -257,7 +259,7 @@ footer a:hover {
 
 .adopt_stats {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0.5rem;
 }
 
@@ -401,6 +403,10 @@ footer a:hover {
     font-size: 18px;
 }
 
+sex_size {
+    background-color: #bfbfbf;
+}
+
 .search_article {
     font-size: 17px;
     font-weight: 900;
@@ -490,7 +496,7 @@ footer a:hover {
     display: block;
     text-align: center;
     border: 1px solid white;
-    background-color: slategray;
+    /*    background-color: slategray;*/
 }
 
 
@@ -505,23 +511,33 @@ footer a:hover {
 #bottom_column {
     width: 100%;
     height: 568px;
-    background-color: slategray;
+    /*    background-color: slategray;*/
 }
 
 .dog_name {
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 .dog_type {
     font-size: 25px;
     margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
-.image_container,
+
+.image_container {
+    width: 100%;
+}
+
 .contact_container {
     width: 100%;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 .dog_image {
@@ -652,7 +668,8 @@ footer a:hover {
 }
 
 .contact_a {
-    color: black;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 .stats_title {
@@ -661,6 +678,7 @@ footer a:hover {
     display: inline;
     padding-bottom: 20px;
     font-family: fantasy;
+    color: white;
 }
 
 .adoption_results {
@@ -708,7 +726,7 @@ footer a:hover {
 }
 
 .url_a:hover {
-    color: black;
+    color: darkgrey;
     text-decoration: underline;
 }
 
@@ -751,10 +769,10 @@ footer a:hover {
 
     .search_adoption_container {
         width: 90%;
-        background-color: slategray;
+        /*        background-color: slategray;*/
         margin-top: 60px;
         display: inline-block;
-        border: 1px solid white;
+        /*        border: 1px solid white;*/
     }
 
     select {
@@ -891,10 +909,10 @@ footer a:hover {
 
     .search_adoption_container {
         width: 90%;
-        background-color: slategray;
+        /*        background-color: slategray;*/
         margin-top: 60px;
         display: inline-block;
-        border: 1px solid white;
+        /*        border: 1px solid white;*/
     }
 
     .search_label_filter {
@@ -902,6 +920,7 @@ footer a:hover {
         /* display: block; */
         /* width: 100px; */
         display: inline-block;
+        color: white;
     }
 
     .breed_select {
@@ -1062,7 +1081,7 @@ footer a:hover {
     .shelter_ul li {
         display: block;
         padding: 2px 20px;
-        font-size: 14px;
+        font-size: 15px;
         border-right: 0;
     }
 
@@ -1111,12 +1130,16 @@ footer a:hover {
         text-decoration: none;
     }
 
+    .contact_a {
+        display: block;
+    }
+
     .adopt_stats_container {
-        background-color: slategray;
+        /*        background-color: slategray;*/
         display: inline-block;
         width: 90%;
         margin: 4%;
-        border: 1px solid white;
+        /*        border: 1px solid white;*/
     }
 
     .for {
@@ -1142,10 +1165,10 @@ footer a:hover {
 
     .search_adoption_container {
         width: 90%;
-        background-color: slategray;
+        /*      background-color: slategray;*/
         margin-top: 47px;
         display: inline-block;
-        border: 1px solid white;
+        /*        border: 1px solid white;*/
     }
 
     .adoption_search_form {
@@ -1161,7 +1184,7 @@ footer a:hover {
     }
 
     .adopt_stats {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .shelter_label {
@@ -1192,6 +1215,7 @@ footer a:hover {
         font-size: 17px;
         /* display: block; */
         padding-bottom: 10px;
+        color: white;
     }
 
     .search_pics {
@@ -1325,7 +1349,7 @@ footer a:hover {
     #bottom_column {
         width: 100%;
         height: 568px;
-        background-color: slategray;
+        /*        background-color: slategray;*/
     }
 
     #right_column {
@@ -1417,7 +1441,8 @@ footer a:hover {
     }
 
     .breed_select {
-        width: 75%;
+        width: 60%;
+        font-size: 12px;
     }
 
     .find {
@@ -1427,24 +1452,24 @@ footer a:hover {
     }
 
     .search_label_filter {
-        font-size: 15px;
-        display: block;
+        font-size: 9px;
+        display: inline-block;
+        color: white;
     }
-
     .input_filter {
         background-color: lightgrey;
-        height: 29px;
+        height: 18px;
         border: 1px solid white;
         border-radius: 3px 3px;
         font-style: italic;
-        font-size: 18px;
+        font-size: 11px;
         padding: 1px;
-        width: 40%;
+        width: 30%;
     }
 
     select {
-        width: auto;
-        height: 33px;
+        width: 33%;
+        height: 18px;
         background-color: lightgrey;
         border: 1px solid white;
         border-radius: 3px 3px;
@@ -1452,15 +1477,16 @@ footer a:hover {
         margin-left: 5px;
         margin-right: 5px;
         font-style: italic;
+        font-size: 12px;
         padding: 1px;
     }
 
 
     label {
-        margin: 0px;
-        font-size: 15px;
+        /* margin: 0px; */
+        font-size: 9px;
         font-weight: bold;
-        display: block;
+        display: inline-block;
     }
 
     .submit_button,
@@ -1488,10 +1514,10 @@ footer a:hover {
 
     .search_adoption_container {
         width: 90%;
-        background-color: slategray;
+        /*        background-color: slategray;*/
         margin-top: 60px;
         display: inline-block;
-        border: 1px solid white;
+        /*        border: 1px solid white;*/
     }
 
     .shelter_form {
@@ -1524,7 +1550,7 @@ footer a:hover {
     }
 
     .stats_title {
-        font-size: 28px;
+        font-size: 20px;
         display: inline;
         padding-bottom: 20px;
         font-family: fantasy;
@@ -1564,14 +1590,14 @@ footer a:hover {
     #bottom_column {
         width: 100%;
         height: 568px;
-        background-color: slategray;
+        /*        background-color: slategray;*/
         margin-bottom: 160px;
     }
 
     .shelter_ul li {
         display: block;
         padding: 2px 20px;
-        font-size: 20px;
+        font-size: 12px;
         border-bottom: 1px solid gray;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -1617,6 +1643,14 @@ footer a:hover {
         text-decoration: none;
         font-size: 8px;
         margin-left: 6px;
+    }
+
+    .contact_container {
+        font-size: 12px;
+    }
+
+    .dog_location {
+        font-size: 12px;
     }
 
 }
