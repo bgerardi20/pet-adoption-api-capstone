@@ -66,6 +66,9 @@ The app uses AJAX JSON calls to the https://dog.ceo/dog-api/ and https://usergui
 App is built to be responsive across mobile, tablet, laptop, and desktop screen resolutions.
 
 ## Development Roadmap
-//This is v1.0 of the app, but future enhancements are expected to include:
-//* Add list of cafe's where visiter can find these coffees
-//* Add comment section for visiter to comment on their favorite coffee flavors or recommend other coffee types and cafe's
+This is v1.0 of the app, but future enhancements are expected to include:
+
+With GPS location, be able to find the nearest park to you, and be able to search out other parks in the area to bring your animal too.
+
+
+
