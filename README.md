@@ -43,7 +43,7 @@ The screen-shoots for all for pages:
 
 ![random-pet-page](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/random-pet-page.png)
 
-![shelter-page](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/shelter-page.png)
+![shelter-page](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/shelter-page2.png)
 
 ## Functionality
 The app's functionality includes:
