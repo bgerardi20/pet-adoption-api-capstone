@@ -495,7 +495,7 @@ sex_size {
     margin: 0 auto;
     display: block;
     text-align: center;
-    border: 1px solid white;
+    /*    border: 1px solid white;*/
     /*    background-color: slategray;*/
 }
 
@@ -547,13 +547,7 @@ sex_size {
     width: 80%;
     height: auto;
     margin-bottom: 10px;
-    border: 1px solid white;
-}
-
-.small_dog_image {
-    display: inline;
-    margin: 20px;
-    border: 1px solid white;
+    /*    border: 1px solid white;*/
 }
 
 .dog_location {
@@ -648,8 +642,7 @@ sex_size {
     margin-top: 15px;
     margin-bottom: 5px;
     display: block;
-    color: white;
-    text-shadow: black 2px 2px;
+    text-shadow: white 1px 1px;
 }
 
 .shelter_ul li {
@@ -657,6 +650,7 @@ sex_size {
     padding: 2px 20px;
     font-size: 20px;
     border-right: 1px solid black;
+    text-shadow: white 1px 1px;
 }
 
 .shelter_ul li:last-child {
@@ -687,6 +681,7 @@ sex_size {
 
 .shelter_results {
     padding: 1rem;
+    background-color: #bfbfbf;
 }
 
 #shelter_input {
@@ -1057,13 +1052,6 @@ sex_size {
         font-size: large;
     }
 
-    .small_dog_image {
-        display: inline;
-        margin: 20px;
-        border: 1px solid white;
-        width: 30%;
-    }
-
     .petfinder_button {
         width: auto;
     }
@@ -1363,12 +1351,6 @@ sex_size {
         padding-bottom: 1%;
     }
 
-    .small_dog_image {
-        display: inline;
-        margin: 5px;
-        border: 1px solid white;
-        width: 30%;
-    }
 
     .shelter_ul li {
         display: block;
@@ -1608,8 +1590,6 @@ sex_size {
         margin-top: 15px;
         margin-bottom: 5px;
         display: block;
-        color: white;
-        text-shadow: black 2px 2px;
     }
 
     .shelter_ul li:last-child {
