@@ -18,9 +18,24 @@ $(document).ready(function () {
     getRandomSearchResults();
 
 
-
-
-
+    //
+    //    -- -- -- -- -- -- -- -- -- -- -
+    //    $('input[class="submit_shelter#"]').on('click', function () {
+    //
+    //        if (this !== "") {
+    //            event.preventDefault();
+    //
+    //            var input = this;
+    //
+    //            $('html, body').animate({
+    //                scrollTop: $(input).offset().top
+    //            }, 800, function () {
+    //
+    //                window.location.this = input;
+    //            });
+    //        }
+    //    }); <
+    //    -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
 
 
     $("#dynamic-droppdown-trigger").change(drop_down_list);
@@ -49,16 +64,44 @@ $(document).ready(function () {
 });
 
 
+
 const STATE = {
     query: {
         key: '3b8476a6e7f18bdc3bf46ddc98e13f7a',
         animal: 'dog',
         output: 'full',
         format: 'json',
-
     }
-}
+};
 
+
+//<
+//-- -- -- -- -- -- -- -- --
+//function handleFindShelterSubmit() {
+//
+//    $('.shelter_form').submit(event => {
+//        event.preventDefault();
+//
+//        STATE.method = 'shelter.find';
+//        STATE.shelterParams.location = $('#shelter_input').val();
+//        getShelterListFromAPI(STATE.method, displayShelterList);
+//        $('#shelter_input').val('');
+//        history.pushState({}, 'shelter-list', 'shelter-list');
+//        handleQueryShelterReset();
+//        $($('html, body')).animate({
+//            scrollTop: $('#snap-to-results').offset().top - 30
+//        }, 'slow');
+//    });
+//};
+//
+//
+//function getShelterListFromAPI(method, callback) {
+//    let apiURL = STATE.petfinder_search_url + method + "?callback=?";
+//    $.getJSON(apiURL, STATE.queryShelter, callback);
+//};
+//
+//<
+//-- -- -- -- -- -- -- -- -- -- -- --
 
 
 
@@ -110,6 +153,28 @@ function drop_down_list() {
         });
 }
 //---------------------------------------------------------------------------------------
+
+function renderShelterList(result) {
+
+    let phoneNumber = null;
+    let email = null;
+
+    if (!('$t' in result.phone)) {
+        return phoneNumber = 'Phone Number Not Available';
+    } else {
+        phoneNumber = result.phone.$t;
+    };
+    if (!('$t' in result.email)) {
+        email = 'Email Not Available';
+    } else {
+        email = '<a href="mailto:${result.email.$t}" target="blank"> ${result.email.$t}</a>';
+    };
+
+};
+
+
+
+
 
 function getRandomSearchResults() {
     var params = {
@@ -317,14 +382,25 @@ function displayShelterSearchResults(resultsArray) {
     $.each(resultsArray, function (resultsArrayKey, resultsArrayValue) {
 
         buildTheHtmlOutput += '<section class="shelter_results_container text-left">';
+
         buildTheHtmlOutput += '<div class="shelter_results">';
+
         buildTheHtmlOutput += '<h2 id="shelter_name">' + checkText(resultsArrayValue.name.$t) + '</h2>';
         buildTheHtmlOutput += '<ul class="shelter_ul">';
+
         buildTheHtmlOutput += '<li id="shelter_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + checkText(resultsArrayValue.address1.$t) + ' ' + checkText(resultsArrayValue.city.$t) + ' ' + checkText(resultsArrayValue.state.$t) + ' ' + checkText(resultsArrayValue.zip.$t) + '</li>';
-        buildTheHtmlOutput += '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArrayValue.phone.$t) + '</li>';
+
+        if (!resultsArrayValue.phone) {
+            '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> No Phone Number Avaialable </li>';
+        } else {
+            buildTheHtmlOutput += '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArrayValue.phone.$t) + '</li>';
+        }
+
         buildTheHtmlOutput += '<li id="shelter_email"><a href="" class="shelter_email"><i class="fa fa-envelope" aria-hidden="true"> </i> ' + checkText(resultsArrayValue.email.$t) + '</a></li>';
         buildTheHtmlOutput += '</ul>';
+
         buildTheHtmlOutput += '</div>';
+
         buildTheHtmlOutput += '</section>';
     });
     //use the HTML output to show it in the index.html
