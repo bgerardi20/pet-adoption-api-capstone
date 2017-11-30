@@ -1586,9 +1586,9 @@ sex_size {
     }
 
     #shelter_name {
-        font-size: 32px;
+        font-size: 28px;
         margin-top: 15px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         display: block;
     }
 
@@ -1633,4 +1633,7 @@ sex_size {
         font-size: 12px;
     }
 
+    .dog_type {
+        font-size: 22px;
+    }
 }

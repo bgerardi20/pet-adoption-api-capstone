@@ -18,25 +18,6 @@ $(document).ready(function () {
     getRandomSearchResults();
 
 
-    //
-    //    -- -- -- -- -- -- -- -- -- -- -
-    //    $('input[class="submit_shelter#"]').on('click', function () {
-    //
-    //        if (this !== "") {
-    //            event.preventDefault();
-    //
-    //            var input = this;
-    //
-    //            $('html, body').animate({
-    //                scrollTop: $(input).offset().top
-    //            }, 800, function () {
-    //
-    //                window.location.this = input;
-    //            });
-    //        }
-    //    }); <
-    //    -- -- -- -- -- -- -- -- -- -- -- -- -- -- -
-
 
     $("#dynamic-droppdown-trigger").change(drop_down_list);
 
@@ -279,7 +260,16 @@ function getSpecificSearchResults(userLocation, userAnimal, userBreed, userSex, 
             /* if the results are meeningful, we can just console.log them */
             console.log(result);
             console.log(result.petfinder.pets.pet);
-            displaySpecificSearchResults(result.petfinder.pets.pet);
+            if (result.petfinder.pets.pet.length == 0) {
+                alert("no results found");
+            } else {
+                displaySpecificSearchResults(result.petfinder.pets.pet);
+
+                $("html, body").animate({
+                    scrollTop: $(".results_container").offset().top
+                }, 500);
+            };
+
         })
         /* if the call is NOT successful show errors */
         .fail(function (jqXHR, error, errorThrown) {
@@ -365,6 +355,10 @@ function getShelterSearchResults(userLocation) {
             /*   console.log(result.petfinder.pets.pet); */
 
             displayShelterSearchResults(result.petfinder.shelters.shelter);
+
+            $("html, body").animate({
+                scrollTop: $(".shelter_results_container").offset().top
+            }, 500);
         })
         /* if the call is NOT successful show errors */
         .fail(function (jqXHR, error, errorThrown) {
@@ -390,11 +384,8 @@ function displayShelterSearchResults(resultsArray) {
 
         buildTheHtmlOutput += '<li id="shelter_location"><i class="fa fa-map-marker" aria-hidden="true"></i> ' + checkText(resultsArrayValue.address1.$t) + ' ' + checkText(resultsArrayValue.city.$t) + ' ' + checkText(resultsArrayValue.state.$t) + ' ' + checkText(resultsArrayValue.zip.$t) + '</li>';
 
-        if (!resultsArrayValue.phone) {
-            '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> No Phone Number Avaialable </li>';
-        } else {
-            buildTheHtmlOutput += '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArrayValue.phone.$t) + '</li>';
-        }
+        buildTheHtmlOutput += '<li id="shelter_phone"><i class="fa fa-phone" aria-hidden="true"></i> ' + checkText(resultsArrayValue.phone.$t) + '</li>';
+
 
         buildTheHtmlOutput += '<li id="shelter_email"><a href="" class="shelter_email"><i class="fa fa-envelope" aria-hidden="true"> </i> ' + checkText(resultsArrayValue.email.$t) + '</a></li>';
         buildTheHtmlOutput += '</ul>';
