@@ -81,8 +81,7 @@ footer a:hover {
 .nav_options {
     display: inline;
     width: 30%;
-    margin: 4px;
-    font-size: small;
+    margin: 5px;
     font-family: fantasy;
     font-weight: bold;
 }
@@ -90,12 +89,13 @@ footer a:hover {
 .nav_words {
     color: white;
     text-decoration: none;
+    font-size: 15px;
 }
 
 .header {
     background: url("/images/other_dog_logo_cropped.jpg");
     width: 100%;
-    height: 250px;
+    height: 285px;
     background-size: cover;
     background-position: top center;
 }
@@ -253,7 +253,7 @@ footer a:hover {
     border-radius: 3px 3px;
     font-style: italic;
     font-size: 18px;
-    padding: 1px;
+    padding: 5px;
     width: 15%;
 }
 
@@ -743,6 +743,10 @@ sex_size {
         font-weight: bold;
     }
 
+    .header {
+        height: 250px;
+    }
+
     .shelter_form {
         height: 250px;
     }
@@ -863,6 +867,10 @@ sex_size {
         font-size: 20px;
         border-right: 0;
     }
+
+    .nav_words {
+        font-size: 14px;
+    }
 }
 
 /*ipad potrait*/
@@ -877,6 +885,14 @@ sex_size {
     }
     .nav_options a {
         color: black;
+    }
+
+    .nav_words {
+        font-size: 12px;
+    }
+
+    .header {
+        height: 250px;
     }
 
     .shelter_form {
@@ -936,8 +952,8 @@ sex_size {
         border-radius: 3px 3px;
         font-style: italic;
         font-size: 18px;
-        padding: 1px;
-        width: 15%;
+        padding: 5px;
+        width: 16%;
     }
 
     select {
@@ -1091,6 +1107,10 @@ sex_size {
         text-shadow: black 2px 2px;
     }
 
+    .header {
+        height: 250px;
+    }
+
     .random_pet_results_container,
     .column_wrapper {
         margin-top: 47px;
@@ -1098,6 +1118,14 @@ sex_size {
 
     .header_list {
         float: none;
+    }
+
+    .adopt_ul {
+        padding: 1rem;
+    }
+
+    .adopt_li {
+        display: inline-block;
     }
 
 
@@ -1116,6 +1144,7 @@ sex_size {
     .nav_words {
         color: white;
         text-decoration: none;
+        font-size: 11px;
     }
 
     .contact_a {
@@ -1165,7 +1194,7 @@ sex_size {
     }
 
     .stats_title {
-        font-size: 27px;
+        font-size: 27.2px;
         display: inline;
         padding-bottom: 20px;
         font-family: fantasy;
@@ -1370,6 +1399,10 @@ sex_size {
         width: 83%;
     }
 
+    .contact_container {
+        margin-top: 15px;
+    }
+
 }
 
 /*iPhone portrait*/
@@ -1382,6 +1415,14 @@ sex_size {
         border: 1px solid white;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .adopt_ul {
+        padding: 0;
+    }
+
+    .header {
+        height: 250px;
     }
 
     .adopt_adopt_stats_container {
@@ -1553,7 +1594,7 @@ sex_size {
     }
 
     #right_column {
-        width: 49%;
+        width: 100%;
         display: inline-block;
         vertical-align: top;
         margin-top: 60px;
@@ -1580,9 +1621,12 @@ sex_size {
         display: block;
         padding: 2px 20px;
         font-size: 12px;
+        font-weight: bold;
         border-bottom: 1px solid gray;
+        border-right: 0;
         margin-top: 5px;
         margin-bottom: 5px;
+        text-shadow: white 0.5px 0.5px;
     }
 
     #shelter_name {
@@ -1596,12 +1640,9 @@ sex_size {
         border-bottom: 0;
     }
 
-    .shelter_ul li {
-        border-right: 0;
-    }
 
     .title {
-        font-size: 19px;
+        font-size: 23px;
         margin-top: 2rem;
         font-family: fantasy;
         color: white;
@@ -1621,7 +1662,8 @@ sex_size {
     .nav_words {
         color: white;
         text-decoration: none;
-        font-size: 8px;
+        font-size: 9px;
+        font-weight: 900;
         margin-left: 6px;
     }
 
@@ -1635,5 +1677,11 @@ sex_size {
 
     .dog_type {
         font-size: 22px;
+    }
+
+    .url_a {
+        color: darkgrey;
+        text-decoration: none;
+        font-size: 13px;
     }
 }

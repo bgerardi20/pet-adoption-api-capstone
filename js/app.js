@@ -56,33 +56,7 @@ const STATE = {
 };
 
 
-//<
-//-- -- -- -- -- -- -- -- --
-//function handleFindShelterSubmit() {
-//
-//    $('.shelter_form').submit(event => {
-//        event.preventDefault();
-//
-//        STATE.method = 'shelter.find';
-//        STATE.shelterParams.location = $('#shelter_input').val();
-//        getShelterListFromAPI(STATE.method, displayShelterList);
-//        $('#shelter_input').val('');
-//        history.pushState({}, 'shelter-list', 'shelter-list');
-//        handleQueryShelterReset();
-//        $($('html, body')).animate({
-//            scrollTop: $('#snap-to-results').offset().top - 30
-//        }, 'slow');
-//    });
-//};
-//
-//
-//function getShelterListFromAPI(method, callback) {
-//    let apiURL = STATE.petfinder_search_url + method + "?callback=?";
-//    $.getJSON(apiURL, STATE.queryShelter, callback);
-//};
-//
-//<
-//-- -- -- -- -- -- -- -- -- -- -- --
+
 
 
 
@@ -135,23 +109,7 @@ function drop_down_list() {
 }
 //---------------------------------------------------------------------------------------
 
-function renderShelterList(result) {
 
-    let phoneNumber = null;
-    let email = null;
-
-    if (!('$t' in result.phone)) {
-        return phoneNumber = 'Phone Number Not Available';
-    } else {
-        phoneNumber = result.phone.$t;
-    };
-    if (!('$t' in result.email)) {
-        email = 'Email Not Available';
-    } else {
-        email = '<a href="mailto:${result.email.$t}" target="blank"> ${result.email.$t}</a>';
-    };
-
-};
 
 
 
@@ -260,15 +218,41 @@ function getSpecificSearchResults(userLocation, userAnimal, userBreed, userSex, 
             /* if the results are meeningful, we can just console.log them */
             console.log(result);
             console.log(result.petfinder.pets.pet);
-            if (result.petfinder.pets.pet.length == 0) {
+
+            //            if (result.petfinder.pets.pet.length == 0) {
+            //                alert("no results found");
+            //            } else {
+            //                displaySpecificSearchResults(result.petfinder.pets.pet);
+
+
+
+
+            var userLocation = $(".zipcode").val();
+            console.log(userLocation);
+
+            //            function checkLocation(userLocation) {
+            //                let userZipcode = (".zipcode").val();
+
+            if (userLocation != result.petfinder.pets.pet[0].contact.zip) {
                 alert("no results found");
             } else {
-                displaySpecificSearchResults(result.petfinder.pets.pet);
+                displaySpecificSearchResults;
 
-                $("html, body").animate({
-                    scrollTop: $(".results_container").offset().top
-                }, 500);
             };
+
+            //            };
+
+
+
+
+
+
+
+
+            $("html, body").animate({
+                scrollTop: $(".results_container").offset().top
+            }, 500);
+
 
         })
         /* if the call is NOT successful show errors */
