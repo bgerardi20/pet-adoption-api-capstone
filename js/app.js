@@ -168,7 +168,7 @@ function displayRandomSearchResults(resultsArray) {
 
     buildTheHtmlOutput += '<section class="image_container">';
     if (resultsArray.media.length != 0) {
-        buildTheHtmlOutput += '<img src="' + resultsArray.media.photos.photo[2].$t + '" alt="big_dog_pic" class="dog_image">';
+        buildTheHtmlOutput += '<img src="' + checkURL(resultsArray.media.photos.photo[2].$t) + '" alt="big_dog_pic" class="dog_image">';
     } else {
         buildTheHtmlOutput += '<img src="images/no-image-vector-file.png" alt="big_dog_pic" class="dog_image">';
     }
@@ -217,42 +217,37 @@ function getSpecificSearchResults(userLocation, userAnimal, userBreed, userSex, 
         .done(function (result) {
             /* if the results are meeningful, we can just console.log them */
             console.log(result);
-            console.log(result.petfinder.pets.pet);
+            //            console.log(result.petfinder.pets.pet);
 
-            //            if (result.petfinder.pets.pet.length == 0) {
-            //                alert("no results found");
-            //            } else {
-            //                displaySpecificSearchResults(result.petfinder.pets.pet);
-
-
-
-
-            var userLocation = $(".zipcode").val();
-            console.log(userLocation);
-
-            //            function checkLocation(userLocation) {
-            //                let userZipcode = (".zipcode").val();
-
-            if (userLocation != result.petfinder.pets.pet[0].contact.zip) {
+            if (result.petfinder.pets == undefined) {
                 alert("no results found");
+            } else if (result.petfinder.pets.pet == undefined) {
+                alert("no results found");
+            } else if (result.petfinder.pets.pet.id !== undefined) {
+                alert("Pets found but not in the area.");
             } else {
-                displaySpecificSearchResults;
-
-            };
-
-            //            };
-
+                displaySpecificSearchResults(result.petfinder.pets.pet);
+                $("html, body").animate({
+                    scrollTop: $(".results_container").offset().top
+                }, 500);
 
 
+                //            var userLocation = $(".zipcode").val();
+                //            console.log(userLocation);
+                //
+                //            //            function checkLocation(userLocation) {
+                //            //                let userZipcode = (".zipcode").val();
+                //
+                //            if (userLocation != result.petfinder.pets.pet[0].contact.zip) {
+                //                alert("no results found");
+                //            } else {
+                //                displaySpecificSearchResults;
+                //
+                //            };
 
+                //            };
 
-
-
-
-            $("html, body").animate({
-                scrollTop: $(".results_container").offset().top
-            }, 500);
-
+            }
 
         })
         /* if the call is NOT successful show errors */
@@ -267,6 +262,16 @@ function checkText(inputText) {
     let outtext = "";
     if (inputText != undefined) {
         outtext = inputText;
+    }
+    return outtext;
+}
+
+function checkURL(urlText) {
+    let outtext = "";
+    if (urlText != undefined) {
+        outtext = urlText;
+    } else {
+        outtext = "images/no-image-vector-file.png";
     }
     return outtext;
 }
@@ -290,10 +295,11 @@ function displaySpecificSearchResults(resultsArray) {
         buildTheHtmlOutput += '</section';
 
         buildTheHtmlOutput += '<section class="image_container">';
-        if (resultsArrayValue.media.length != 0) {
-            buildTheHtmlOutput += '<img src="' + resultsArrayValue.media.photos.photo[2].$t + '" alt="big_dog_pic" class="dog_image">';
-        } else {
+        console.log(resultsArrayValue.media);
+        if ((resultsArrayValue.media.length == 0) || (resultsArrayValue.media.photos == undefined)) {
             buildTheHtmlOutput += '<img src="images/no-image-vector-file.png" alt="big_dog_pic" class="dog_image">';
+        } else {
+            buildTheHtmlOutput += '<img src="' + checkURL(resultsArrayValue.media.photos.photo[2].$t) + '" alt="big_dog_pic" class="dog_image">';
         }
         buildTheHtmlOutput += '</section>';
 
