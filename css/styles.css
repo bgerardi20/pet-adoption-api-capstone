@@ -93,7 +93,7 @@ footer a:hover {
 }
 
 .header {
-    background: url("/images/other_dog_logo_cropped.jpg");
+    background: url("../images/other_dog_logo_cropped.jpg");
     width: 100%;
     height: 285px;
     background-size: cover;
