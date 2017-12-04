@@ -1,5 +1,6 @@
 # Pet Adoption API Capstone
-Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with dogCEO API and RescueGroups API
+Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with Petfinder API.
+https://bgerardi20.github.io/pet-adoption-api-capstone/
 
 
 ## Background
@@ -7,6 +8,7 @@ My entire life I have been a animal lover, but have always had a hard time findi
 
 ## Use Case
 This app is for all animal lovers. A user can accomplish multiple things through my app. One can browse picturs of every dog breed; wether that purpose be to bring a smile to their face, or to research a type of dog you are curious about adopting, multiple images are readily available to browse. If you already know what type of animal you're wishing to join your family, hop on over to the adoption page. The user can then search for their new companion using the search engine. Once the input is delivered, you will be given results tailored to your search, with contact information on how to make the adoption possible.
+
 ![Use Case](https://github.com/bgerardi20/pet-adoption-api-capstone/blob/master/github-images/IMG_1631.jpg)
 
 
