@@ -22,9 +22,8 @@ $(document).ready(function () {
     $("#dynamic-droppdown-trigger").change(drop_down_list);
 
     $(".adoption_search_form").submit(function (event) {
-        //if the page refreshes when you submit the form use "preventDefault()" to force JavaScript to handle the form submission
         event.preventDefault();
-        //get the value from the input box
+
         var userLocation = $("input[name='location']").val();
         var userAnimal = $("select[name='animal']").val();
         var userBreed = $("select[name='breed']").val();
@@ -34,12 +33,10 @@ $(document).ready(function () {
     });
 
     $(".shelter_form").submit(function (event) {
-        //if the page refreshes when you submit the form use "preventDefault()" to force JavaScript to handle the form submission
         event.preventDefault();
-        //get the value from the input box
+
         var userLocation = $("input[name='location']").val();
 
-        console.log(userLocation);
         getShelterSearchResults(userLocation);
     });
 });
@@ -57,16 +54,8 @@ const STATE = {
 
 
 
-
-
-
-//-----------------------------------------------------------------------------------
-//breeds dynamic droppdown
-
 function drop_down_list() {
     var animal = $('#dynamic-droppdown-trigger').val();
-
-    console.log(animal);
 
     if (animal == "") {
         alert("Please select an animal");
@@ -78,47 +67,32 @@ function drop_down_list() {
         format: 'json'
     };
     var result = $.ajax({
-            /* update API end point */
             url: 'https://api.petfinder.com/breed.list',
             data: params,
             dataType: "jsonp",
-            /*set the call type GET / POST*/
             type: "GET"
         })
-        /* if the call is successful (status 200 OK) show results */
         .done(function (result) {
-            /* if the results are meeningful, we can just console.log them */
-
-            console.log(result);
 
             var buildTheHtmlOutput = "";
 
             $.each(result.petfinder.breeds.breed, function (resultsArrayKey, resultsArrayValue) {
                 buildTheHtmlOutput += '<option value="' + resultsArrayValue.$t + '">' + resultsArrayValue.$t + '</option>';
             });
-            //use the HTML output to show it in the index.html
+
             $("#dynamic-droppdown-populate").html(buildTheHtmlOutput);
 
         })
-        /* if the call is NOT successful show errors */
         .fail(function (jqXHR, error, errorThrown) {
             console.log(jqXHR);
             console.log(error);
             console.log(errorThrown);
         });
 }
-//---------------------------------------------------------------------------------------
-
-
-
-
-
-
 
 function getRandomSearchResults() {
     var params = {
         key: 'ba13b6abb4f8162d2d70780f5d2a8d35',
-        //    animal: 'dog',
         output: 'full',
         format: 'json',
         location: '76021',
@@ -128,21 +102,16 @@ function getRandomSearchResults() {
         breed: [null, null]
     };
     var result = $.ajax({
-            /* update API end point */
             url: 'https://api.petfinder.com/pet.getRandom',
             data: params,
             dataType: "jsonp",
-            /*set the call type GET / POST*/
             type: "GET"
         })
-        /* if the call is successful (status 200 OK) show results */
         .done(function (result) {
-            /* if the results are meeningful, we can just console.log them */
 
             displayRandomSearchResults(result.petfinder.pet);
 
         })
-        /* if the call is NOT successful show errors */
         .fail(function (jqXHR, error, errorThrown) {
             console.log(jqXHR);
             console.log(error);
@@ -152,7 +121,6 @@ function getRandomSearchResults() {
 
 function displayRandomSearchResults(resultsArray) {
 
-    //create an empty variable to store one LI for each one the results
     var buildTheHtmlOutput = "";
 
     buildTheHtmlOutput += '<div class="adoption_results">';
@@ -188,7 +156,6 @@ function displayRandomSearchResults(resultsArray) {
     buildTheHtmlOutput += '</div>';
 
 
-    //use the HTML output to show it in the index.html
     $(".random_pet_results_container").html(buildTheHtmlOutput);
 };
 
@@ -206,18 +173,12 @@ function getSpecificSearchResults(userLocation, userAnimal, userBreed, userSex, 
         breed: userBreed
     };
     var result = $.ajax({
-            /* update API end point */
             url: 'https://api.petfinder.com/pet.find',
             data: params,
             dataType: "jsonp",
-            /*set the call type GET / POST*/
             type: "GET"
         })
-        /* if the call is successful (status 200 OK) show results */
         .done(function (result) {
-            /* if the results are meeningful, we can just console.log them */
-            console.log(result);
-            //            console.log(result.petfinder.pets.pet);
 
             if (result.petfinder.pets == undefined) {
                 alert("no results found");
@@ -231,26 +192,9 @@ function getSpecificSearchResults(userLocation, userAnimal, userBreed, userSex, 
                     scrollTop: $(".results_container").offset().top
                 }, 500);
 
-
-                //            var userLocation = $(".zipcode").val();
-                //            console.log(userLocation);
-                //
-                //            //            function checkLocation(userLocation) {
-                //            //                let userZipcode = (".zipcode").val();
-                //
-                //            if (userLocation != result.petfinder.pets.pet[0].contact.zip) {
-                //                alert("no results found");
-                //            } else {
-                //                displaySpecificSearchResults;
-                //
-                //            };
-
-                //            };
-
             }
 
         })
-        /* if the call is NOT successful show errors */
         .fail(function (jqXHR, error, errorThrown) {
             console.log(jqXHR);
             console.log(error);
@@ -277,8 +221,7 @@ function checkURL(urlText) {
 }
 
 function displaySpecificSearchResults(resultsArray) {
-    console.log(resultsArray);
-    //create an empty variable to store one LI for each one the results
+
     var buildTheHtmlOutput = "";
 
     $.each(resultsArray, function (resultsArrayKey, resultsArrayValue) {
@@ -295,7 +238,6 @@ function displaySpecificSearchResults(resultsArray) {
         buildTheHtmlOutput += '</section';
 
         buildTheHtmlOutput += '<section class="image_container">';
-        console.log(resultsArrayValue.media);
         if ((resultsArrayValue.media.length == 0) || (resultsArrayValue.media.photos == undefined)) {
             buildTheHtmlOutput += '<img src="images/no-image-vector-file.png" alt="big_dog_pic" class="dog_image">';
         } else {
@@ -317,7 +259,7 @@ function displaySpecificSearchResults(resultsArray) {
         buildTheHtmlOutput += '</div>';
 
     });
-    //use the HTML output to show it in the index.html
+
     $(".results_container").html(buildTheHtmlOutput);
 };
 
@@ -331,26 +273,19 @@ function getShelterSearchResults(userLocation) {
         count: 10
     };
     var result = $.ajax({
-            /* update API end point */
             url: 'https://api.petfinder.com/shelter.find',
             data: params,
             dataType: "jsonp",
-            /*set the call type GET / POST*/
             type: "GET"
         })
-        /* if the call is successful (status 200 OK) show results */
         .done(function (result) {
-            /* if the results are meeningful, we can just console.log them */
-            console.log(result);
-            /*   console.log(result.petfinder.pets.pet); */
-
             displayShelterSearchResults(result.petfinder.shelters.shelter);
 
             $("html, body").animate({
                 scrollTop: $(".shelter_results_container").offset().top
             }, 500);
         })
-        /* if the call is NOT successful show errors */
+
         .fail(function (jqXHR, error, errorThrown) {
             console.log(jqXHR);
             console.log(error);
@@ -359,8 +294,7 @@ function getShelterSearchResults(userLocation) {
 }
 
 function displayShelterSearchResults(resultsArray) {
-    console.log(resultsArray);
-    //create an empty variable to store one LI for each one the results
+
     var buildTheHtmlOutput = "";
 
     $.each(resultsArray, function (resultsArrayKey, resultsArrayValue) {
@@ -384,6 +318,6 @@ function displayShelterSearchResults(resultsArray) {
 
         buildTheHtmlOutput += '</section>';
     });
-    //use the HTML output to show it in the index.html
+
     $(".shelter_results_container").html(buildTheHtmlOutput);
 };
